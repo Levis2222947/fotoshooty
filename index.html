@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotoshoot Utrecht | Professionele fotoshoots in Utrecht</title>
+  <meta name="description" content="Boek een professionele fotoshoot in Utrecht bij Fotoshoot.nl. Bekijk pakketten voor portret, familie, glamour, love shoot en zakelijke fotografie in de fotostudio.">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Fotoshoot.nl Utrecht",
+      "image": "https://fotoshoot.nl/wp-content/uploads/2017/09/logo.png",
+      "telephone": "+31 6 1360 0773",
+      "email": "info@fotoshoot.nl",
+      "priceRange": "EUR 35+",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Herenstraat 23",
+        "postalCode": "3512 KB",
+        "addressLocality": "Utrecht",
+        "addressCountry": "NL"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ]
+    }
+  </script>
+
+  <style>
+    :root {
+      --ink: #344648;
+      --muted: #62777c;
+      --paper: #fbf4ee;
+      --soft: #fbe0c3;
+      --line: #ead2c0;
+      --brand: #7d8e95;
+      --brand-dark: #344648;
+      --accent: #ffbb98;
+      --sky: #7d8e95;
+      --mist: #fff8f3;
+      --white: #ffffff;
+      --shadow: 0 22px 70px rgba(52, 70, 72, 0.16);
+      --shadow-soft: 0 12px 34px rgba(52, 70, 72, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fbf4ee;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      background: var(--ink);
+      color: var(--white);
+      font-size: 0.9rem;
+      padding: 0.55rem 5vw;
+      text-align: center;
+    }
+
+    .nav {
+      align-items: center;
+      background: rgba(255, 255, 255, 0.94);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      gap: 1.5rem;
+      justify-content: space-between;
+      padding: 1rem 5vw;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-main {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      min-width: 0;
+      width: auto;
+    }
+
+    .logo {
+      align-items: center;
+      display: flex;
+      gap: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .logo img {
+      height: 36px;
+      width: auto;
+    }
+
+    .logo-city {
+      border-left: 1px solid var(--line);
+      color: var(--brand);
+      font-size: 0.95rem;
+      font-weight: 900;
+      padding-left: 0.7rem;
+    }
+
+    .nav-links {
+      align-items: center;
+      display: flex;
+      gap: 1.4rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .nav-links > a:not(.button) {
+      transition: color 180ms ease;
+    }
+
+    .nav-links > a:not(.button):hover {
+      color: var(--ink);
+    }
+
+    .menu-toggle {
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      cursor: pointer;
+      display: none;
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 900;
+      gap: 0.55rem;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 0.85rem;
+    }
+
+    .menu-icon {
+      display: grid;
+      gap: 3px;
+      width: 15px;
+    }
+
+    .menu-icon span {
+      background: currentColor;
+      border-radius: 999px;
+      display: block;
+      height: 2px;
+      transition: transform 180ms ease, opacity 180ms ease;
+    }
+
+    .nav.is-open .menu-icon span:first-child {
+      transform: translateY(5px) rotate(45deg);
+    }
+
+    .nav.is-open .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav.is-open .menu-icon span:last-child {
+      transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .button {
+      align-items: center;
+      background: var(--brand);
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: var(--white);
+      display: inline-flex;
+      font-weight: 800;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0.75rem 1.25rem;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      background: var(--brand-dark);
+      border-color: transparent;
+      transform: translateY(-2px);
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.6);
+      color: var(--white);
+    }
+
+    .button.light {
+      background: var(--white);
+      border-color: var(--white);
+      color: var(--ink);
+    }
+
+    .hero {
+      color: var(--white);
+      min-height: calc(100vh - 96px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before {
+      background: linear-gradient(90deg, rgba(52, 70, 72, 0.9) 0%, rgba(125, 142, 149, 0.64) 44%, rgba(255, 187, 152, 0.18) 100%),
+        url("https://fotoshoot.nl/wp-content/uploads/2026/05/utrecht-fotostudio.png") center right 18% / cover no-repeat;
+      content: "";
+      inset: 0;
+      position: absolute;
+    }
+
+    .hero-inner {
+      display: grid;
+      gap: 2rem;
+      min-height: calc(100vh - 96px);
+      padding: 7vw 5vw 5vw;
+      place-items: end start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: #fbe0c3;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 7vw, 6.7rem);
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 0.95;
+      max-width: 850px;
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      margin: 1.35rem 0 1.8rem;
+      max-width: 640px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .hero-stats {
+      display: grid;
+      gap: 1px;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      margin-top: 4rem;
+      max-width: 920px;
+      overflow: hidden;
+    }
+
+    .stat {
+      background: rgba(255, 250, 245, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      min-height: 112px;
+      padding: 1.1rem;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.9rem;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .stat span {
+      color: rgba(255, 255, 255, 0.76);
+      display: block;
+      font-size: 0.88rem;
+      margin-top: 0.45rem;
+    }
+
+    .reviews {
+      background: var(--white);
+      overflow: hidden;
+      padding: 1.4rem 0 0.15rem;
+    }
+
+    .review-window {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .review-window::before,
+    .review-window::after {
+      content: "";
+      height: 100%;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: min(8vw, 110px);
+      z-index: 1;
+    }
+
+    .review-window::before {
+      background: linear-gradient(90deg, var(--white), rgba(255, 255, 255, 0));
+      left: 0;
+    }
+
+    .review-window::after {
+      background: linear-gradient(270deg, var(--white), rgba(255, 255, 255, 0));
+      right: 0;
+    }
+
+    .review-track {
+      animation: slideReviews 72s linear infinite;
+      display: flex;
+      gap: 1rem;
+      padding: 0 1rem;
+      width: max-content;
+    }
+
+    .review-set {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .review-track:hover {
+      animation-play-state: paused;
+    }
+
+    .review-card {
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdfd 100%);
+      border: 1px solid rgba(125, 142, 149, 0.5);
+      border-radius: 8px;
+      box-shadow: none;
+      display: flex;
+      flex: 0 0 318px;
+      flex-direction: column;
+      gap: 0.65rem;
+      min-height: 190px;
+      padding: 1rem;
+      position: relative;
+    }
+
+    .review-card::before {
+      background: linear-gradient(90deg, rgba(125, 142, 149, 0.88), rgba(52, 70, 72, 0.86));
+      border-radius: 8px 8px 0 0;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .review-top {
+      align-items: center;
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .review-avatar {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(52, 70, 72, 0.18);
+      display: block;
+      flex: 0 0 44px;
+      height: 44px;
+      object-fit: cover;
+      width: 44px;
+    }
+
+    .review-stars {
+      color: var(--brand-dark);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      margin-top: 0.28rem;
+    }
+
+    .review-name {
+      color: var(--ink);
+      font-size: 0.86rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .review-card blockquote {
+      color: var(--ink);
+      display: -webkit-box;
+      font-size: 0.8rem;
+      line-height: 1.45;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .review-card.expanded blockquote {
+      display: block;
+      overflow: visible;
+    }
+
+    .review-toggle {
+      background: transparent;
+      border: 0;
+      color: var(--brand-dark);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.76rem;
+      font-weight: 900;
+      margin-top: auto;
+      padding: 0;
+      text-align: left;
+    }
+
+    @keyframes slideReviews {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(calc(-50% - 0.5rem));
+      }
+    }
+
+    section {
+      padding: 6rem 5vw;
+    }
+
+    .section-head {
+      align-items: end;
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      margin: 0 auto 2.6rem;
+      max-width: 1180px;
+    }
+
+    .section-head h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      font-weight: 500;
+      line-height: 1;
+      max-width: 720px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      max-width: 430px;
+    }
+
+    .intro {
+      background: var(--white);
+      padding-top: 1.2rem;
+    }
+
+    .intro-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: 1.2fr 0.8fr;
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    .story {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      padding: clamp(1.6rem, 4vw, 3rem);
+    }
+
+    .story h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 4.3rem);
+      font-weight: 500;
+      line-height: 1.02;
+      margin-bottom: 1.3rem;
+    }
+
+    .story p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-top: 1rem;
+      max-width: 780px;
+    }
+
+    .studio-points {
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    .studio-points li {
+      border-top: 2px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding-top: 0.85rem;
+    }
+
+    .studio-points strong {
+      color: var(--ink);
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .quote {
+      background: var(--brand-dark);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 360px;
+      padding: clamp(1.6rem, 4vw, 2.5rem);
+    }
+
+    .quote p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1.08;
+    }
+
+    .quote span {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .services {
+      background: var(--mist);
+    }
+
+    .service-grid,
+    .theme-grid {
+      display: grid;
+      gap: 1.1rem;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    .theme-grid {
+      margin-top: 1.1rem;
+    }
+
+    .theme-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      min-height: 100%;
+      overflow: hidden;
+      position: relative;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .theme-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-5px);
+    }
+
+    .theme-card img {
+      aspect-ratio: 4 / 3;
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .theme-card div {
+      padding: 1rem;
+    }
+
+    .theme-card strong {
+      display: block;
+      font-size: 1.08rem;
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+    }
+
+    .theme-card span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .label {
+      color: var(--brand-dark);
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.55rem;
+      text-transform: uppercase;
+    }
+
+    .prices {
+      background: var(--white);
+    }
+
+    .price-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    .price-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      min-height: 420px;
+      padding: 1.2rem;
+      position: relative;
+    }
+
+    .price-card.featured {
+      border-color: var(--line);
+      box-shadow: var(--shadow);
+      transform: translateY(-8px);
+    }
+
+    .choice-badge {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      box-shadow: 0 8px 22px rgba(52, 70, 72, 0.14);
+      color: var(--ink);
+      display: inline-flex;
+      font-size: 0.72rem;
+      font-weight: 900;
+      left: 50%;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      padding: 0.48rem 0.9rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+    .price-subtitle {
+      color: var(--muted);
+      display: block;
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.55rem;
+      text-transform: uppercase;
+    }
+
+    .price-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .price-card .amount {
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3rem;
+      line-height: 1;
+      margin: 1rem 0;
+    }
+
+    .price-card ul {
+      color: var(--muted);
+      display: grid;
+      gap: 0.7rem;
+      list-style: none;
+      margin-bottom: 1.2rem;
+    }
+
+    .price-card li {
+      padding: 0;
+    }
+
+    .price-card li::before {
+      color: var(--ink);
+      content: "-";
+      font-weight: 900;
+      margin-right: 0.45rem;
+    }
+
+    .price-card .button {
+      margin-top: auto;
+    }
+
+    .process {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .process .section-head p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .steps {
+      counter-reset: steps;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      counter-increment: steps;
+      min-height: 228px;
+      padding: 1.35rem;
+    }
+
+    .step::before {
+      color: #fbe0c3;
+      content: "0" counter(steps);
+      display: block;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+
+    .step h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .step p {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 0.95rem;
+    }
+
+    .gallery {
+      background: var(--white);
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    .gallery-grid img {
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      height: 100%;
+      min-height: 260px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .gallery-grid img:first-child {
+      grid-row: span 2;
+      min-height: 540px;
+    }
+
+    .contact {
+      background: var(--mist);
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: 0.8fr 1.2fr;
+      margin: 0 auto;
+      max-width: 1180px;
+    }
+
+    .contact-panel,
+    .locations {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      padding: clamp(1.4rem, 3vw, 2rem);
+    }
+
+    .contact-panel h2,
+    .locations h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 3vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 1rem;
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .contact-list span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .location-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 1.4rem;
+    }
+
+    .location {
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+    }
+
+    .location h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .map-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-top: 1.2rem;
+      overflow: hidden;
+    }
+
+    .map-card iframe {
+      aspect-ratio: 16 / 9;
+      border: 0;
+      display: block;
+      min-height: 330px;
+      width: 100%;
+    }
+
+    .route-link {
+      color: var(--ink);
+      display: inline-flex;
+      font-weight: 900;
+      margin-top: 1rem;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .location p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .final-cta {
+      background:
+        linear-gradient(90deg, rgba(52, 70, 72, 0.92), rgba(125, 142, 149, 0.5)),
+        url("https://fotoshoot.nl/wp-content/uploads/2020/11/fotos-maken-in-Utrecht.jpg") center / cover no-repeat;
+      color: var(--white);
+      padding-bottom: 7rem;
+      padding-top: 7rem;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.4rem, 5vw, 5rem);
+      font-weight: 500;
+      line-height: 1;
+      margin: 0 auto 1rem;
+      max-width: 850px;
+    }
+
+    .final-cta p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0 auto 1.7rem;
+      max-width: 620px;
+    }
+
+    footer {
+      background: var(--brand-dark);
+      color: rgba(255, 255, 255, 0.68);
+      padding: 1.6rem 5vw;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .nav {
+        gap: 1rem;
+      }
+
+      .nav-links {
+        gap: 0.85rem;
+      }
+
+      .hero-stats,
+      .service-grid,
+      .theme-grid,
+      .price-grid,
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+
+      .intro-grid,
+      .contact-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .studio-points {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid img:first-child {
+        min-height: 340px;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        font-size: 0.74rem;
+        line-height: 1.3;
+        padding: 0.45rem 0.85rem;
+      }
+
+      .nav {
+        align-items: stretch;
+        display: block;
+        padding: 0.75rem 0.85rem 0.7rem;
+        position: sticky;
+      }
+
+      .nav-main {
+        width: 100%;
+      }
+
+      .logo img {
+        height: 28px;
+        max-width: 132px;
+      }
+
+      .logo-city {
+        font-size: 0.76rem;
+        padding-left: 0.48rem;
+      }
+
+      .nav-links {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        font-size: 0.94rem;
+        gap: 0;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0 0.85rem;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: max-height 220ms ease, opacity 180ms ease, padding 220ms ease, transform 180ms ease, margin-top 220ms ease;
+        width: 100%;
+      }
+
+      .nav-links > a:not(.button) {
+        align-items: center;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--line);
+        border-radius: 0;
+        display: flex;
+        min-height: 46px;
+        padding: 0;
+      }
+
+      .nav-links .button {
+        margin-top: 0.8rem;
+        min-height: 44px;
+        width: 100%;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .nav.is-open .nav-links {
+        margin-top: 0.75rem;
+        max-height: 360px;
+        opacity: 1;
+        padding-bottom: 0.85rem;
+        padding-top: 0.15rem;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(52, 70, 72, 0.35), rgba(52, 70, 72, 0.88) 48%, rgba(52, 70, 72, 0.96)),
+          url("https://fotoshoot.nl/wp-content/uploads/2026/05/utrecht-fotostudio.png") center top / cover no-repeat;
+      }
+
+      .hero-inner {
+        align-items: end;
+        min-height: 720px;
+        padding: 13rem 0.85rem 1.2rem;
+      }
+
+      h1 {
+        font-size: 2.42rem;
+        line-height: 1;
+        max-width: 19ch;
+      }
+
+      .eyebrow {
+        font-size: 0.67rem;
+        letter-spacing: 0.14em;
+        margin-bottom: 0.65rem;
+      }
+
+      .hero p {
+        font-size: 0.92rem;
+        line-height: 1.5;
+        margin: 0.85rem 0 1rem;
+        max-width: 38ch;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .button,
+      .price-card .button,
+      .contact-panel .button {
+        width: 100%;
+      }
+
+      .button {
+        min-height: 42px;
+      }
+
+      .hero-stats {
+        gap: 0.5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 1rem;
+        max-width: none;
+      }
+
+      .stat {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 6px;
+        min-height: 82px;
+        padding: 0.75rem;
+      }
+
+      .stat strong {
+        font-size: 1.35rem;
+      }
+
+      .stat span {
+        font-size: 0.75rem;
+        line-height: 1.35;
+        margin-top: 0.32rem;
+      }
+
+      .reviews {
+        padding-top: 0.65rem;
+      }
+
+      .review-card {
+        flex-basis: 214px;
+        min-height: 172px;
+        padding: 0.82rem;
+      }
+
+      .review-track {
+        gap: 0.7rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+      }
+
+      .review-set {
+        gap: 0.7rem;
+      }
+
+      .service-grid,
+      .theme-grid,
+      .price-grid,
+      .steps,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        gap: 0.8rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .section-head h2,
+      .story h2,
+      .contact-panel h2,
+      .locations h2,
+      .final-cta h2 {
+        overflow-wrap: anywhere;
+      }
+
+      .section-head h2 {
+        font-size: 1.84rem;
+        line-height: 1.06;
+      }
+
+      .story,
+      .quote,
+      .price-card,
+      .contact-panel,
+      .locations {
+        padding: 1.1rem;
+      }
+
+      .intro {
+        padding-top: 1rem;
+      }
+
+      .story h2 {
+        font-size: 1.95rem;
+        line-height: 1.05;
+        margin-bottom: 1rem;
+      }
+
+      .studio-points {
+        gap: 0.55rem;
+        margin-top: 1.2rem;
+      }
+
+      .studio-points li {
+        font-size: 0.84rem;
+        padding-top: 0.5rem;
+      }
+
+      .quote {
+        min-height: 190px;
+      }
+
+      .quote p {
+        font-size: 1.65rem;
+      }
+
+      .service-grid,
+      .theme-grid,
+      .price-grid,
+      .steps,
+      .location-grid {
+        gap: 0.8rem;
+      }
+
+      .theme-card div {
+        padding: 0.9rem;
+      }
+
+      .theme-card img {
+        aspect-ratio: 16 / 11;
+      }
+
+      .price-card {
+        min-height: auto;
+      }
+
+      .price-card .amount {
+        font-size: 2.5rem;
+        margin: 0.7rem 0;
+      }
+
+      .step {
+        min-height: auto;
+        padding: 1rem;
+      }
+
+      .step::before {
+        margin-bottom: 0.8rem;
+      }
+
+      .gallery-grid img,
+      .gallery-grid img:first-child {
+        min-height: 205px;
+      }
+
+      .location p,
+      .contact-list li {
+        overflow-wrap: anywhere;
+      }
+
+      .final-cta {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+      }
+
+      section {
+        padding: 2.8rem 0.85rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .review-track {
+        animation: none;
+        overflow-x: auto;
+      }
+    }
+  
+    /* Sitewide polish pass */
+    .button {
+      box-shadow: 0 12px 28px rgba(52, 70, 72, 0.18);
+      letter-spacing: 0.01em;
+    }
+
+    .button:hover {
+      box-shadow: 0 16px 36px rgba(52, 70, 72, 0.22);
+    }
+
+    .price-card,
+    .theme-card,
+    .gift-card,
+    .review-card,
+    .contact-card,
+    .studio-card,
+    .use-card,
+    .step,
+    .text,
+    .text-card {
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .price-card:hover,
+    .theme-card:hover,
+    .gift-card:hover,
+    .use-card:hover,
+    .step:hover {
+      border-color: rgba(125, 142, 149, 0.46);
+      box-shadow: 0 18px 46px rgba(52, 70, 72, 0.14);
+      transform: translateY(-3px);
+    }
+
+    .price-card.featured {
+      border-color: var(--brand) !important;
+      box-shadow: 0 0 0 2px rgba(125, 142, 149, 0.26), 0 20px 60px rgba(52, 70, 72, 0.18) !important;
+      transform: translateY(-5px);
+    }
+
+    .choice-badge,
+    .label,
+    .eyebrow,
+    .price-subtitle {
+      letter-spacing: 0.13em;
+    }
+
+    .lead {
+      color: var(--ink);
+    }
+
+    .section-head h2::after,
+    .text h2::after,
+    .text-card h2::after {
+      background: var(--brand);
+      border-radius: 999px;
+      content: "";
+      display: block;
+      height: 3px;
+      margin-top: 0.8rem;
+      width: 56px;
+    }
+
+    .hero-image,
+    .gallery-grid img,
+    .text-image,
+    .info-image {
+      filter: saturate(1.04) contrast(1.02);
+    }
+</style>
+</head>
+
+<body id="top">
+  <div class="topbar">Fotoshoot Utrecht vanaf &euro;35 | Fotostudio aan de Herenstraat 23 in Utrecht | Alleen op afspraak</div>
+
+  <nav class="nav" aria-label="Hoofdnavigatie">
+    <div class="nav-main">
+      <a class="logo" href="#top">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2017/09/logo.png" alt="Fotoshoot.nl">
+        <span class="logo-city">Utrecht</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span>Menu</span>
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+    <div class="nav-links" id="site-menu">
+      <a href="#fotoshoots">Fotoshoots</a>
+      <a href="#prijzen">Prijzen</a>
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#studio">Studio Utrecht</a>
+      <a href="contact.html">Contact</a>
+      <a class="button" href="https://fotoshoot.nl/boeken/">Boek nu</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">Professionele fotoshoot in Utrecht</p>
+        <h1>Fotoshoot Utrecht</h1>
+        <p>Portret, familie, love, glamour en zakelijk. Rustig begeleid in Utrecht.</p>
+        <div class="hero-actions">
+          <a class="button light" href="https://fotoshoot.nl/boeken/">Plan je fotoshoot</a>
+          <a class="button secondary" href="#fotoshoots">Bekijk mogelijkheden</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Belangrijkste voordelen">
+          <div class="stat"><strong>Utrecht</strong><span>studio aan de Herenstraat 23</span></div>
+          <div class="stat"><strong>&euro;35</strong><span>startprijs voor een fotoshoot</span></div>
+          <div class="stat"><strong>10+</strong><span>thema&rsquo;s voor iedere gelegenheid</span></div>
+          <div class="stat"><strong>9.5</strong><span>beoordeling via Google Reviews</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="reviews" aria-label="Reviews Fotoshoot Utrecht">
+      <div class="review-window">
+        <div class="review-track" id="review-track">
+          <div class="review-set" id="review-set">
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-1.png" alt="Profiel van Milan Vermeer">
+                <div><p class="review-name">Igor Chl&aacute;dek</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Very fun and friendly service. Good quality photos and easy communication with the personel.</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-2.png" alt="Profiel van Tara de Vries">
+                <div><p class="review-name">Trinity Dirckx</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Great experience &amp; the photographer Jelmer was soooo friendly. Also great location in the city. Definitely recommend!</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-3.png" alt="Profiel van Sophie Kramer">
+                <div><p class="review-name">Sofie Luise Krog</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Wonderful experience! Professional and kind. 10/10</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-4.png" alt="Profiel van Jasper Noorland">
+                <div><p class="review-name">Jobin Gholami</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Geweldige service. Ze waren erg aardig voor mijn kinderen. De prijs was goed. We hadden het grote pakket met afdrukken en digitale foto&rsquo;s. Mooie locatie met decoraties. We hebben ook een fotoshoot op het strand bij hen geboekt. Bedankt voor jullie vriendelijkheid en de relaxte sfeer.</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-5.png" alt="Profiel van Amira Elsen">
+                <div><p class="review-name">Amira Elsen</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Adrian was een fantastische fotograaf. Het was onze eerste professionele fotoshoot en hij zorgde er meteen voor dat we ons op ons gemak voelden. De foto&rsquo;s zijn prachtig. Goede kwaliteit en een redelijke prijs.</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-6.png" alt="Profiel van Lina Zhou">
+                <div><p class="review-name">Jaime Yeh</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Amazing staff and service, made us feel very welcomed, great directions for posing and a lot of backgrounds for the photos. Overall anwesome experience!</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-7.png" alt="Profiel van Alex Rowan">
+                <div><p class="review-name">Alex Rowan</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Amazing experience! Will come back for sure. Super professional and made me at ease immediately. One of the best fotoshooting places in town!</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-8.png" alt="Profiel van Nora van Leeuwen">
+                <div><p class="review-name">Nora van Leeuwen</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Lovely place to go for good photos! Very very pleased!</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-9.png" alt="Profiel van Elias Hart">
+                <div><p class="review-name">Elias Hart</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>It was perfect, good service and nice staff. Price was reasonable.</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-10.png" alt="Profiel van Maya Solberg">
+                <div><p class="review-name">Monika Moy Mo</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Super professional photoshoot! We&rsquo;re absolutely thrilled with the results.</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-11.png" alt="Profiel van Kyan Peters">
+                <div><p class="review-name">Kevin Rath</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Echt een geweldige fotoshoot gehad. Voelde me op me gemak en werd super goed geholpen. Bedankt voor alles!</blockquote>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="review-12.png" alt="Profiel van Noor de Wit">
+                <div><p class="review-name">Cathelijne Vreugdenhil</p><p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+              </div>
+              <blockquote>Hele leuke fotoshoot, goede fotograaf met leuke fotoidee&euml;n en een mooie kwaliteit van de foto&rsquo;s!</blockquote>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="over">
+      <div class="intro-grid">
+        <article class="story">
+          <p class="eyebrow">Fotostudio in Utrecht</p>
+          <h2>Goed licht. Relaxte sfeer.</h2>
+          <ul class="studio-points">
+            <li><strong>Centrale studio</strong>Herenstraat 23 in Utrecht.</li>
+            <li><strong>Veel thema&rsquo;s</strong>Van portret tot familie en glamour.</li>
+          </ul>
+        </article>
+
+        <aside class="quote">
+          <p>&ldquo;Een fotoshoot begint met aandacht en eindigt met resultaat.&rdquo;</p>
+          <span>In Utrecht, persoonlijk begeleid van begin tot eind.</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="services" id="fotoshoots">
+      <div class="section-head">
+        <h2>Kies je thema.</h2>
+        <p>Vind de shoot die bij je past.</p>
+      </div>
+
+      <div class="service-grid">
+        <a class="theme-card" href="portret.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2020/11/portret-foto-laten-maken.jpg" alt="Professionele portretfoto in warme studiostijl">
+          <div>
+            <span class="label">Populair</span>
+            <strong>Portretshoot</strong>
+            <span>Voor jezelf, profiel, portfolio of een creatieve persoonlijke shoot.</span>
+          </div>
+        </a>
+
+        <a class="theme-card" href="famillie.html">
+          <img src="broer-en-zussen-fotoshoot-buiten.jpg" alt="Broers en zus buiten tijdens een familieshoot">
+          <div>
+            <span class="label">Gezin</span>
+            <strong>Familieshoot</strong>
+            <span>Gezinnen, generaties en groepen met diverse achtergronden.</span>
+          </div>
+        </a>
+
+        <a class="theme-card" href="zakelijk.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FT0A0078-768x512.jpg" alt="Zakelijke fotoshoot voorbeeld">
+          <div>
+            <span class="label">Business</span>
+            <strong>Zakelijke shoot</strong>
+            <span>LinkedIn, teamfoto&rsquo;s, bedrijfsprofiel en websitefotografie.</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="theme-grid" aria-label="Alle fotoshoot thema's">
+        <a class="theme-card" href="glamour.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2019/09/before_after-2.jpg" alt="Glamour fotoshoot voor en na voorbeeld">
+          <div><span class="label">Glamour</span><strong>Glamour fotoshoot</strong><span>Meer uitstraling, styling en een luxe studiosfeer.</span></div>
+        </a>
+        <a class="theme-card" href="loveshoot.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2025/05/valentijnshoot-love-fotoshoot.nl_.jpg" alt="Love shoot voorbeeld">
+          <div><span class="label">Samen</span><strong>Love shoot</strong><span>Voor koppels, verloving, jubileum of cadeau.</span></div>
+        </a>
+        <a class="theme-card" href="vriendinnenshoot.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/friends-fotoshoot.jpg" alt="Vriendinnen fotoshoot in studio">
+          <div><span class="label">Groep</span><strong>Vriendinnen shoot</strong><span>Samen lachen, poseren en foto&rsquo;s maken als herinnering.</span></div>
+        </a>
+        <a class="theme-card" href="model.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FOTOSHOOT.NL_916.jpg" alt="Model fotoshoot voorbeeld">
+          <div><span class="label">Fashion</span><strong>Model fotoshoot</strong><span>Portfolio, fashion, casting of creatieve beelden.</span></div>
+        </a>
+        <a class="theme-card" href="baby.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2024/01/Baby-in-basket2.png" alt="Baby en kids fotoshoot voorbeeld">
+          <div><span class="label">Kids</span><strong>Baby &amp; kids</strong><span>Zachte, spontane foto&rsquo;s van kinderen en jonge gezinnen.</span></div>
+        </a>
+        <a class="theme-card" href="zwangerschap.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/zwanger-fotoshoot.jpg" alt="Zwangerschap fotoshoot voorbeeld">
+          <div><span class="label">Mama</span><strong>Zwangerschap</strong><span>Rustige beelden van een bijzonder moment.</span></div>
+        </a>
+        <a class="theme-card" href="bruiloft.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2019/09/bruidsfotograaf_03.jpg" alt="Bruiloft fotoshoot voorbeeld">
+          <div><span class="label">Liefde</span><strong>Bruiloft</strong><span>Romantische beelden en reportage voor jullie dag.</span></div>
+        </a>
+        <a class="theme-card" href="cadeaubon.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2021/01/vrijgezellenfeest-fotosessie2.jpg" alt="Fotoshoot cadeaubon voorbeeld">
+          <div><span class="label">Cadeau</span><strong>Cadeaubon</strong><span>Een fotoshoot geven als persoonlijk cadeau.</span></div>
+        </a>
+        <a class="theme-card" href="creativeshoot.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/Fotoshoot-Verjaardagshoot.jpg" alt="Creatieve fotoshoot voorbeeld">
+          <div><span class="label">Extra</span><strong>Creatieve shoot</strong><span>Eigen idee, eigen sfeer of een volledig thema op maat.</span></div>
+        </a>
+      </div>
+    </section>
+    <section class="prices" id="prijzen">
+      <div class="section-head">
+        <h2>Prijzen fotoshoot Utrecht.</h2>
+        <p>Kies het pakket dat bij jouw shoot past. Na de fotoshoot kun je extra foto&rsquo;s bijbestellen.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="price-card">
+          <span class="price-subtitle">Start</span>
+          <h3>Small</h3>
+          <p>Voor een korte, duidelijke sessie.</p>
+          <div class="amount">&euro;35</div>
+          <ul>
+            <li>Fotograaf 0-30 min</li>
+            <li>25 foto-opnames</li>
+            <li>Keuze uit een foto</li>
+            <li>Print of digitaal</li>
+            <li>1 decor</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Small</a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="choice-badge">Meest gekozen</span>
+          <span class="price-subtitle">Populair pakket</span>
+          <h3>Medium</h3>
+          <p>Meer keuze en meer variatie.</p>
+          <div class="amount">&euro;159</div>
+          <ul>
+            <li>Fotograaf 0-45 min</li>
+            <li>75 foto-opnames</li>
+            <li>Keuze uit 0-10 foto&rsquo;s</li>
+            <li>Print of digitaal</li>
+            <li>2 decors</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Medium</a>
+        </article>
+
+        <article class="price-card">
+          <span class="price-subtitle">Veel keuze</span>
+          <h3>Large</h3>
+          <p>Voor families, modellen en uitgebreide shoots.</p>
+          <div class="amount">&euro;249</div>
+          <ul>
+            <li>Fotostudio 0-1 uur</li>
+            <li>120 opnames, keuze uit 0-50 stuks</li>
+            <li>Keuze: print of digitaal</li>
+            <li>Inclusief 2 luxe prints</li>
+            <li>Locatie: strand, park of studio</li>
+            <li>Alle familie combinaties</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Large</a>
+        </article>
+
+        <article class="price-card">
+          <span class="price-subtitle">Compleet</span>
+          <h3>Extra Large</h3>
+          <p>Voor maximale selectie en luxe prints.</p>
+          <div class="amount">&euro;339</div>
+          <ul>
+            <li>Fotostudio 1 uur plus</li>
+            <li>150 opnames, keuze uit 0-75 stuks</li>
+            <li>Keuze: print of digitaal</li>
+            <li>Inclusief 10 luxe prints</li>
+            <li>Locatie: strand, park of studio</li>
+            <li>Alle familie combinaties</li>
+            <li>Extra foto&rsquo;s na te bestellen</li>
+            <li>Begeleiding &amp; Service</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Extra Large</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" id="werkwijze">
+      <div class="section-head">
+        <h2>Zo werkt een fotoshoot.</h2>
+        <p>Kies, boek en laat je begeleiden.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <h3>Kies je shoot</h3>
+          <p>Portret, familie, love, baby, model, glamour, zakelijk of een speciale fotoshoot.</p>
+        </article>
+        <article class="step">
+          <h3>Plan je afspraak</h3>
+          <p>Fotoshoot Utrecht werkt alleen op afspraak en stemt datum, locatie en wensen af.</p>
+        </article>
+        <article class="step">
+          <h3>Laat je begeleiden</h3>
+          <p>De fotograaf helpt met houding, sfeer, achtergrond en combinaties.</p>
+        </article>
+        <article class="step">
+          <h3>Bekijk je resultaat</h3>
+          <p>Na de shoot bekijk je de foto&rsquo;s en kies je de beelden die bij je passen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Voorbeelden van fotoshoot stijl">
+      <div class="section-head">
+        <h2>Foto&rsquo;s uit de studio.</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2020/11/fotos-maken-in-Utrecht.jpg" alt="Fotoshoot Utrecht voorbeeld">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2026/05/Grote-familiefoto-blije-man.webp" alt="Familie fotoshoot Utrecht voorbeeld">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/liefdesshoot-046a.jpg" alt="Love shoot voorbeeld">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2023/06/vader-en-zoon-babyfotograaf.jpg" alt="Baby fotoshoot voorbeeld">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/L15A32734-1024x683.jpg" alt="Professioneel fotoshoot beeldmateriaal">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-grid">
+        <aside class="contact-panel">
+          <p class="eyebrow">Contact</p>
+          <h2>Boek je shoot.</h2>
+          <p>Vragen of boeken? Neem contact op. We werken op afspraak.</p>
+
+          <ul class="contact-list">
+            <li><span>Bel direct</span><a href="tel:+31613600773">06 1360 0773</a></li>
+            <li><span>Mail</span><a href="mailto:info@fotoshoot.nl">info@fotoshoot.nl</a></li>
+            <li><span>Extra nummers</span>Consumentenlijn 06 3920 0929 &middot; Bedrijvenlijn 06 1360 0773</li>
+            <li><span>Openingstijden</span>Maandag t/m vrijdag 9:00-20:00 &middot; zaterdag en zondag 9:00-19:00</li>
+            <li><span>KvK</span>34362582 &middot; BTW NL001199367B27</li>
+          </ul>
+
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek via Fotoshoot.nl</a>
+        </aside>
+
+        <div class="locations" id="studio">
+          <h2>Fotostudio Utrecht</h2>
+          <p>Studio aan de Herenstraat 23. Bekijk de kaart of open direct je route.</p>
+
+          <div class="location-grid">
+            <article class="location">
+              <h3>Adres</h3>
+              <p>Fotostudio &amp; Fotograaf<br>Herenstraat 23<br>3512 KB Utrecht</p>
+            </article>
+            <article class="location">
+              <h3>Voor wie</h3>
+              <p>Particulieren, families, koppels, modellen, ondernemers en bedrijven in Utrecht.</p>
+            </article>
+            <article class="location">
+              <h3>Sfeer</h3>
+              <p>Rustige studio, duidelijke aanwijzingen en professionele belichting.</p>
+            </article>
+            <article class="location">
+              <h3>Afspraak</h3>
+              <p>Plan vooraf je fotoshoot, zodat er genoeg tijd is voor jouw thema en wensen.</p>
+            </article>
+          </div>
+
+          <div class="map-card">
+            <iframe
+              title="Google Maps kaart van Fotoshoot.nl Utrecht, Herenstraat 23"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Herenstraat%2023%2C%203512%20KB%20Utrecht&amp;output=embed">
+            </iframe>
+          </div>
+          <a class="route-link" href="https://www.google.com/maps/search/?api=1&amp;query=Herenstraat%2023%2C%203512%20KB%20Utrecht" target="_blank" rel="noopener">Open route in Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <h2>Klaar voor je fotoshoot?</h2>
+      <p>Boek voor jezelf, samen of als cadeau.</p>
+      <a class="button light" href="https://fotoshoot.nl/boeken/">Boek nu</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Fotoshoot Utrecht. Professionele fotoshoots in de studio aan de Herenstraat 23.</p>
+  </footer>
+
+  <script>
+    const siteNav = document.querySelector(".nav");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menuLinks = document.querySelectorAll("#site-menu a");
+
+    if (siteNav && menuToggle) {
+      menuToggle.addEventListener("click", () => {
+        const open = siteNav.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(open));
+      });
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          siteNav.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    const reviewTrack = document.getElementById("review-track");
+    const reviewSet = document.getElementById("review-set");
+
+    if (reviewTrack && reviewSet) {
+      reviewSet.querySelectorAll(".review-card").forEach((card) => {
+        const reviewText = card.querySelector("blockquote");
+        if (!reviewText || reviewText.textContent.trim().length < 95) {
+          return;
+        }
+
+        const toggle = document.createElement("button");
+        toggle.className = "review-toggle";
+        toggle.type = "button";
+        toggle.textContent = "Lees meer";
+        toggle.addEventListener("click", () => {
+          const expanded = card.classList.toggle("expanded");
+          toggle.textContent = expanded ? "Lees minder" : "Lees meer";
+        });
+        card.appendChild(toggle);
+      });
+
+      const reviewCopy = reviewSet.cloneNode(true);
+      reviewCopy.removeAttribute("id");
+      reviewCopy.setAttribute("aria-hidden", "true");
+      reviewCopy.querySelectorAll(".review-toggle").forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const card = toggle.closest(".review-card");
+          const expanded = card.classList.toggle("expanded");
+          toggle.textContent = expanded ? "Lees minder" : "Lees meer";
+        });
+      });
+      reviewTrack.appendChild(reviewCopy);
+    }
+  </script>
+</body>
+</html>

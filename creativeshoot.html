@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatieve Fotoshoot Utrecht | Fotoshoot.nl</title>
+  <meta name="description" content="Boek een creatieve fotoshoot in Utrecht met eigen thema, decor en sfeer. Bekijk themashoot pakketten voor portret, verjaardag en originele foto-ideeen.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root { --ink:#344648; --muted:#62777c; --paper:#fbf4ee; --soft:#fbe0c3; --line:#ead2c0; --brand:#7d8e95; --accent:#ffbb98; --mist:#fff8f3; --white:#fff; --shadow:0 22px 70px rgba(52,70,72,.16); --shadow-soft:0 12px 34px rgba(52,70,72,.1); }
+    * { box-sizing:border-box; margin:0; padding:0; } html { scroll-behavior:smooth; } body { background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; } a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+    .topbar { background:var(--ink); color:var(--white); font-size:.9rem; padding:.55rem 5vw; text-align:center; }
+    .nav { align-items:center; backdrop-filter:blur(18px); background:rgba(255,255,255,.94); border-bottom:1px solid var(--line); display:flex; gap:1.5rem; justify-content:space-between; padding:1rem 5vw; position:sticky; top:0; z-index:10; }
+    .nav-main,.logo,.nav-links { align-items:center; display:flex; } .nav-main { justify-content:space-between; } .logo { gap:.7rem; } .logo img { height:36px; width:auto; } .logo-city { border-left:1px solid var(--line); color:var(--brand); font-size:.95rem; font-weight:900; padding-left:.7rem; } .nav-links { color:var(--muted); font-size:.95rem; gap:1.35rem; } .nav-links > a:not(.button):hover { color:var(--ink); }
+    .button { align-items:center; background:var(--brand); border:1px solid transparent; border-radius:999px; color:var(--white); display:inline-flex; font-weight:900; justify-content:center; min-height:46px; padding:.72rem 1.25rem; transition:background 180ms ease,border-color 180ms ease,transform 180ms ease; white-space:nowrap; } .button:hover { background:var(--ink); transform:translateY(-2px); } .button.secondary { background:transparent; border-color:var(--ink); color:var(--ink); }
+    .menu-toggle { align-items:center; background:var(--white); border:1px solid var(--line); border-radius:999px; color:var(--ink); cursor:pointer; display:none; font:inherit; font-size:.88rem; font-weight:900; gap:.55rem; min-height:40px; padding:0 .85rem; } .menu-icon { display:grid; gap:3px; width:15px; } .menu-icon span { background:currentColor; border-radius:999px; height:2px; transition:opacity 180ms ease,transform 180ms ease; } .nav.is-open .menu-icon span:first-child { transform:translateY(5px) rotate(45deg); } .nav.is-open .menu-icon span:nth-child(2) { opacity:0; } .nav.is-open .menu-icon span:last-child { transform:translateY(-5px) rotate(-45deg); }
+    .hero { background:var(--white); display:grid; grid-template-columns:minmax(390px,1fr) minmax(450px,1fr); min-height:calc(100vh - 96px); } .hero-copy { align-items:center; display:flex; justify-content:center; padding:clamp(2rem,7vw,7rem); } .hero-inner { max-width:600px; } .hero-image { height:100%; min-height:560px; object-fit:cover; object-position:center; width:100%; }
+    .eyebrow,.label,.price-subtitle { color:var(--brand); display:block; font-size:.74rem; font-weight:900; letter-spacing:.16em; margin-bottom:.82rem; text-transform:uppercase; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; font-weight:500; letter-spacing:0; line-height:1.02; } h1 { font-size:clamp(2.75rem,6vw,5.7rem); margin-bottom:1rem; } h2 { font-size:clamp(2rem,3.7vw,3.55rem); } h3 { line-height:1.25; }
+    .lead { font-size:clamp(1.04rem,1.5vw,1.25rem); font-weight:800; margin-bottom:1rem; } .hero p:not(.eyebrow):not(.lead),.section-head p,.price-card p,.text-card p,.step p,.idea-card p,.contact-card p,.studio-card p { color:var(--muted); } .hero p:not(.eyebrow):not(.lead) { margin-bottom:.88rem; }
+    .benefits { display:grid; gap:.52rem; list-style:none; margin:1.3rem 0 1.6rem; } .benefits li { color:var(--muted); font-size:.95rem; padding-left:1.35rem; position:relative; } .benefits li::before { color:var(--brand); content:"\2713"; font-weight:900; left:0; position:absolute; top:0; } .actions { display:flex; flex-wrap:wrap; gap:.8rem; }
+    section { padding:clamp(2.5rem,5vw,5.5rem) 5vw; } .section-head { align-items:end; display:flex; gap:1.5rem; justify-content:space-between; margin:0 auto 1.8rem; max-width:1180px; } .section-head p { max-width:480px; }
+    .price-grid,.info-grid,.steps,.ideas,.gallery-grid,.contact-grid { margin:0 auto; max-width:1180px; } .price-grid { display:grid; gap:1rem; grid-template-columns:repeat(4,minmax(0,1fr)); padding-top:1.2rem; }
+    .price-card,.text-card,.step,.idea-card,.contact-card,.studio-card { background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-soft); } .price-card { display:flex; flex-direction:column; min-height:520px; padding:1.7rem 1.2rem 1.2rem; position:relative; } .price-card.featured { border-color:rgba(125,142,149,.72); box-shadow:0 0 0 2px rgba(125,142,149,.22),0 0 34px rgba(125,142,149,.23),var(--shadow); } .choice-badge { background:var(--brand); border-radius:999px; color:var(--white); display:inline-flex; font-size:.72rem; font-weight:900; left:50%; letter-spacing:.12em; padding:.38rem .76rem; position:absolute; text-transform:uppercase; top:0; transform:translate(-50%,-50%); white-space:nowrap; }
+    .price-card h3 { font-size:1.42rem; } .amount { font-family:Georgia,"Times New Roman",serif; font-size:2.9rem; line-height:1.1; margin:.65rem 0 .35rem; } .price-card ul { color:var(--muted); display:grid; gap:.54rem; list-style:none; margin:1rem 0 1.25rem; } .price-card li::before { color:var(--ink); content:"-"; font-weight:900; margin-right:.42rem; } .price-card .button { align-self:flex-start; background:var(--ink); box-shadow:0 11px 24px rgba(52,70,72,.2); font-size:.92rem; margin-top:auto; min-height:42px; padding:.56rem 1.04rem; } .price-card .button:hover { background:var(--brand); }
+    .info { background:var(--mist); } .info-grid { align-items:stretch; display:grid; gap:1rem; grid-template-columns:minmax(0,.92fr) minmax(360px,1fr); } .text-card { align-content:center; display:grid; gap:.95rem; padding:clamp(1.4rem,3.3vw,3.2rem); } .text-card h2,.contact-card h2,.studio-card h2 { font-size:clamp(1.9rem,3vw,3rem); } .info-image { border-radius:8px; box-shadow:var(--shadow); height:100%; min-height:440px; object-fit:cover; width:100%; }
+    .steps { display:grid; gap:1rem; grid-template-columns:repeat(3,minmax(0,1fr)); } .step { padding:1.35rem; } .step-number { align-items:center; background:var(--soft); border-radius:999px; display:inline-flex; font-weight:900; height:36px; justify-content:center; margin-bottom:1rem; width:36px; } .step h3,.idea-card h3 { font-size:1.18rem; margin-bottom:.4rem; }
+    .ideas { display:grid; gap:1rem; grid-template-columns:repeat(4,minmax(0,1fr)); } .idea-card { padding:1.2rem; } .idea-card::before { background:linear-gradient(90deg,var(--soft),var(--accent)); border-radius:999px; content:""; display:block; height:5px; margin-bottom:1rem; width:46px; }
+    .gallery { background:var(--white); } .gallery-grid { display:grid; gap:1rem; grid-template-columns:1.2fr .9fr .9fr; } .gallery-grid img { border-radius:8px; height:100%; min-height:260px; object-fit:cover; width:100%; } .gallery-grid img:first-child { grid-row:span 2; min-height:520px; }
+    .contact-grid { display:grid; gap:1rem; grid-template-columns:minmax(320px,.84fr) 1fr; } .contact-card,.studio-card { padding:clamp(1.25rem,2.6vw,2.4rem); } .contact-list { display:grid; gap:.7rem; list-style:none; margin:1.2rem 0 1.45rem; } .contact-list li,.studio-card p { color:var(--muted); } .contact-list span { color:var(--ink); display:block; font-size:.76rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; } .detail-grid { display:grid; gap:.85rem; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:1.2rem; } .detail-grid article { background:var(--mist); border:1px solid var(--line); border-radius:8px; padding:1rem; } .detail-grid h3 { font-size:1rem; margin-bottom:.25rem; }
+    footer { background:var(--ink); color:rgba(255,255,255,.82); padding:1.1rem 5vw; text-align:center; }
+    @media (max-width:980px) { .hero,.info-grid,.contact-grid { grid-template-columns:1fr; } .hero-image { min-height:500px; order:-1; } .price-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .ideas { grid-template-columns:repeat(2,minmax(0,1fr)); } .steps { grid-template-columns:1fr; } .gallery-grid img:first-child,.info-image { min-height:350px; } .section-head { align-items:start; flex-direction:column; } }
+    @media (max-width:640px) { .topbar { font-size:.74rem; line-height:1.3; padding:.45rem .85rem; } .nav { align-items:stretch; display:block; padding:.75rem .85rem .7rem; } .nav-main { width:100%; } .logo img { height:28px; max-width:132px; } .logo-city { font-size:.76rem; padding-left:.48rem; } .menu-toggle { display:inline-flex; } .nav-links { background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-soft); display:grid; font-size:.94rem; gap:0; max-height:0; opacity:0; overflow:hidden; padding:0 .85rem; pointer-events:none; transform:translateY(-8px); transition:max-height 220ms ease,opacity 180ms ease,padding 220ms ease,transform 180ms ease,margin-top 220ms ease; } .nav-links > a:not(.button) { align-items:center; border-bottom:1px solid var(--line); display:flex; min-height:46px; } .nav-links .button { margin-top:.8rem; width:100%; } .nav.is-open .nav-links { margin-top:.75rem; max-height:340px; opacity:1; padding-bottom:.85rem; padding-top:.15rem; pointer-events:auto; transform:translateY(0); } .hero-image { min-height:330px; } .hero-copy { padding:2rem .85rem 2.6rem; } h1 { font-size:2.2rem; } .actions,.price-grid,.ideas,.gallery-grid,.detail-grid { display:grid; grid-template-columns:1fr; } .actions .button,.contact-card .button { width:100%; } section { padding-left:.85rem; padding-right:.85rem; } .price-card,.text-card,.step,.idea-card,.contact-card,.studio-card { min-height:auto; padding:1rem; } .gallery-grid img,.gallery-grid img:first-child,.info-image { grid-row:auto; min-height:220px; } }
+  
+    /* Sitewide polish pass */
+    .button {
+      box-shadow: 0 12px 28px rgba(52, 70, 72, 0.18);
+      letter-spacing: 0.01em;
+    }
+
+    .button:hover {
+      box-shadow: 0 16px 36px rgba(52, 70, 72, 0.22);
+    }
+
+    .price-card,
+    .theme-card,
+    .gift-card,
+    .review-card,
+    .contact-card,
+    .studio-card,
+    .use-card,
+    .step,
+    .text,
+    .text-card {
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .price-card:hover,
+    .theme-card:hover,
+    .gift-card:hover,
+    .use-card:hover,
+    .step:hover {
+      border-color: rgba(125, 142, 149, 0.46);
+      box-shadow: 0 18px 46px rgba(52, 70, 72, 0.14);
+      transform: translateY(-3px);
+    }
+
+    .price-card.featured {
+      border-color: var(--brand) !important;
+      box-shadow: 0 0 0 2px rgba(125, 142, 149, 0.26), 0 20px 60px rgba(52, 70, 72, 0.18) !important;
+      transform: translateY(-5px);
+    }
+
+    .choice-badge,
+    .label,
+    .eyebrow,
+    .price-subtitle {
+      letter-spacing: 0.13em;
+    }
+
+    .lead {
+      color: var(--ink);
+    }
+
+    .section-head h2::after,
+    .text h2::after,
+    .text-card h2::after {
+      background: var(--brand);
+      border-radius: 999px;
+      content: "";
+      display: block;
+      height: 3px;
+      margin-top: 0.8rem;
+      width: 56px;
+    }
+
+    .hero-image,
+    .gallery-grid img,
+    .text-image,
+    .info-image {
+      filter: saturate(1.04) contrast(1.02);
+    }
+    }
+</style>
+</head>
+<body>
+  <div class="topbar">Creatieve fotoshoot in Utrecht met thema, decor en professionele begeleiding.</div>
+  <nav class="nav" aria-label="Hoofdnavigatie"><div class="nav-main"><a class="logo" href="index.html"><img src="https://fotoshoot.nl/wp-content/uploads/2017/09/logo.png" alt="Fotoshoot.nl"><span class="logo-city">Utrecht</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="creative-menu"><span>Menu</span><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button></div><div class="nav-links" id="creative-menu"><a href="index.html">Home</a><a href="#prijzen">Pakketten</a><a href="#ideeen">Idee&euml;n</a><a href="contact.html">Contact</a><a class="button" href="https://fotoshoot.nl/boeken/">Boek direct</a></div></nav>
+  <main>
+    <section class="hero"><div class="hero-copy"><div class="hero-inner"><p class="eyebrow">Thema shoot</p><h1>Creatieve Shoot Utrecht</h1><p class="lead">Jouw idee. Jouw sfeer.</p><p>Speels, krachtig of feestelijk. We helpen met decor, outfit en pose.</p><ul class="benefits"><li>Studio, park of strand</li><li>Naturel of creatief</li><li>Begeleiding tijdens de shoot</li><li>Vanaf &euro;35</li></ul><div class="actions"><a class="button" href="https://fotoshoot.nl/boeken/">Boek creatieve shoot</a><a class="button secondary" href="#prijzen">Bekijk pakketten</a></div></div></div><img class="hero-image" src="https://fotoshoot.nl/wp-content/uploads/2025/04/Fotoshoot-Verjaardagshoot.jpg" alt="Creatieve fotoshoot in Utrecht met thema en sfeer"></section>
+    <section id="prijzen"><div class="section-head"><h2>Themashoot pakketten.</h2><p>Kies hoeveel tijd, variatie en foto&rsquo;s passen bij jouw creatieve fotoshoot.</p></div><div class="price-grid"><article class="price-card"><span class="price-subtitle">Start</span><h3>Small</h3><p>Voor een kort creatief idee.</p><div class="amount">&euro;35</div><ul><li>Fotograaf 0-30 min</li><li>25 foto-opnames</li><li>Keuze uit een foto</li><li>Print of digitaal</li><li>1 decor</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek Small</a></article><article class="price-card featured"><span class="choice-badge">Meest gekozen</span><span class="price-subtitle">Meer sfeer</span><h3>Medium</h3><p>Voor variatie en extra keuze.</p><div class="amount">&euro;159</div><ul><li>Fotograaf 0-45 min</li><li>75 foto-opnames</li><li>Keuze uit 0-10 foto&rsquo;s</li><li>Print of digitaal</li><li>2 decors</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek Medium</a></article><article class="price-card"><span class="price-subtitle">Veel keuze</span><h3>Large</h3><p>Voor uitgebreider fotograferen.</p><div class="amount">&euro;249</div><ul><li>Fotostudio 0-1 uur</li><li>120 opnames, keuze uit 0-50 stuks</li><li>Keuze: print of digitaal</li><li>Inclusief 2 luxe prints</li><li>Locatie: strand, park of studio</li><li>Alle familie combinaties</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek Large</a></article><article class="price-card"><span class="price-subtitle">Compleet</span><h3>Extra Large</h3><p>Voor een grote selectie.</p><div class="amount">&euro;339</div><ul><li>Fotostudio 1 uur plus</li><li>150 opnames, keuze uit 0-75 stuks</li><li>Keuze: print of digitaal</li><li>Inclusief 10 luxe prints</li><li>Locatie: strand, park of studio</li><li>Alle familie combinaties</li><li>Extra foto&rsquo;s na te bestellen</li><li>Begeleiding &amp; Service</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek XL</a></article></div></section>
+    <section class="info"><div class="info-grid"><article class="text-card"><p class="label">Eigen stijl</p><h2>Maak het eigen.</h2><p>Voor verjaardag, portfolio, social media of een opvallend portret.</p><p>We vertalen je idee naar licht, pose en decor.</p></article><img class="info-image" src="https://fotoshoot.nl/wp-content/uploads/2020/11/portret-foto-laten-maken.jpg" alt="Creatief portret in de fotostudio"></div></section>
+    <section aria-label="Hoe werkt een creatieve fotoshoot"><div class="section-head"><h2>Zo maak je het thema sterker.</h2><p>Met een duidelijke richting wordt de shoot sneller mooier en gevarieerder.</p></div><div class="steps"><article class="step"><span class="step-number">1</span><h3>Kies de sfeer</h3><p>Denk aan feestelijk, rustig, modegericht, kleurrijk of juist naturel.</p></article><article class="step"><span class="step-number">2</span><h3>Neem idee&euml;n mee</h3><p>Outfits, accessoires en voorbeeldbeelden helpen de fotograaf sturen.</p></article><article class="step"><span class="step-number">3</span><h3>Werk met variatie</h3><p>Gebruik pose, decor, licht en achtergrond voor een persoonlijke serie.</p></article></div></section>
+    <section id="ideeen"><div class="section-head"><h2>Creatieve fotoshoot idee&euml;n.</h2><p>De shoot kan starten vanuit een moment, een stijl of een doel voor de beelden.</p></div><div class="ideas"><article class="idea-card"><h3>Verjaardag</h3><p>Maak feestelijke foto&rsquo;s met leeftijd, props, confetti of een eigen styling.</p></article><article class="idea-card"><h3>Social &amp; profiel</h3><p>Laat beelden maken met meer persoonlijkheid dan een gewone profielfoto.</p></article><article class="idea-card"><h3>Portfolio</h3><p>Werk aan foto&rsquo;s voor model, performer, maker of creatieve presentatie.</p></article><article class="idea-card"><h3>Cadeau</h3><p>Boek de shoot samen of geef een persoonlijke fotoshoot ervaring cadeau.</p></article></div></section>
+    <section class="gallery" aria-label="Creatieve fotoshoot voorbeelden"><div class="section-head"><h2>Creatieve voorbeelden.</h2><p>Portret, groep en styling.</p></div><div class="gallery-grid"><img src="https://fotoshoot.nl/wp-content/uploads/2020/11/fotos-maken-in-Utrecht.jpg" alt="Creatieve fotoshoot in Utrecht voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FOTOSHOOT.NL_916.jpg" alt="Creatieve model fotoshoot voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2017/12/friends-fotoshoot.jpg" alt="Creatieve groepsfotoshoot voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2019/09/before_after-2.jpg" alt="Glamour creatieve fotoshoot voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2025/05/valentijnshoot-love-fotoshoot.nl_.jpg" alt="Creatieve love shoot voorbeeld"></div></section>
+    <section id="contact"><div class="contact-grid"><aside class="contact-card"><p class="label">Boeken</p><h2>Plan je creatieve fotoshoot.</h2><p>Boek direct of neem contact op als je wilt afstemmen welk thema, pakket of decor bij jouw idee past.</p><ul class="contact-list"><li><span>Bel</span><a href="tel:+31613600773">06 1360 0773</a></li><li><span>Mail</span><a href="mailto:info@fotoshoot.nl">info@fotoshoot.nl</a></li><li><span>Openingstijden</span>Maandag t/m vrijdag 9:00-20:00<br>Zaterdag en zondag 9:00-19:00</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek direct</a></aside><article class="studio-card"><h2>Creatief in Utrecht.</h2><p>De shoot blijft onderdeel van de Fotoshoot.nl-stijl: persoonlijk, begeleid en afgestemd op het beeld dat je wilt maken.</p><div class="detail-grid"><article><h3>Locatie</h3><p>Studio, park of strand.</p></article><article><h3>Stijl</h3><p>Naturel of creatief.</p></article><article><h3>Decor</h3><p>Achtergronden en sfeer.</p></article><article><h3>Doel</h3><p>Herinnering, profiel of portfolio.</p></article></div></article></div></section>
+  </main>
+  <footer><p>&copy; 2026 Fotoshoot Utrecht. Creatieve fotoshoots en themashoots.</p></footer>
+  <script>const creativeNav=document.querySelector(".nav");const creativeToggle=document.querySelector(".menu-toggle");const creativeLinks=document.querySelectorAll("#creative-menu a");if(creativeNav&&creativeToggle){creativeToggle.addEventListener("click",()=>{const open=creativeNav.classList.toggle("is-open");creativeToggle.setAttribute("aria-expanded",String(open));});creativeLinks.forEach((link)=>link.addEventListener("click",()=>{creativeNav.classList.remove("is-open");creativeToggle.setAttribute("aria-expanded","false");}));}</script>
+</body>
+</html>

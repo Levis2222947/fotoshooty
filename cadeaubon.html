@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotoshoot Cadeaubon Utrecht | Fotoshoot.nl</title>
+  <meta name="description" content="Geef een fotoshoot cadeaubon cadeau in Utrecht. Kies een portretshoot, familieshoot, love shoot, glamour shoot of ander fotoshoot thema bij Fotoshoot.nl.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root { --ink:#344648; --muted:#62777c; --paper:#fbf4ee; --soft:#fbe0c3; --line:#ead2c0; --brand:#7d8e95; --accent:#ffbb98; --mist:#fff8f3; --white:#fff; --shadow:0 22px 70px rgba(52,70,72,.16); --shadow-soft:0 12px 34px rgba(52,70,72,.1); }
+    * { box-sizing:border-box; margin:0; padding:0; } html { scroll-behavior:smooth; } body { background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; } a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+    .topbar { background:var(--ink); color:var(--white); font-size:.9rem; padding:.55rem 5vw; text-align:center; }
+    .nav { align-items:center; backdrop-filter:blur(18px); background:rgba(255,255,255,.94); border-bottom:1px solid var(--line); display:flex; gap:1.5rem; justify-content:space-between; padding:1rem 5vw; position:sticky; top:0; z-index:10; }
+    .nav-main,.logo,.nav-links { align-items:center; display:flex; } .nav-main { justify-content:space-between; } .logo { gap:.7rem; } .logo img { height:36px; width:auto; } .logo-city { border-left:1px solid var(--line); color:var(--brand); font-size:.95rem; font-weight:900; padding-left:.7rem; } .nav-links { color:var(--muted); font-size:.95rem; gap:1.35rem; } .nav-links > a:not(.button):hover { color:var(--ink); }
+    .button { align-items:center; background:var(--brand); border:1px solid transparent; border-radius:999px; color:var(--white); display:inline-flex; font-weight:900; justify-content:center; min-height:46px; padding:.72rem 1.25rem; transition:background 180ms ease,border-color 180ms ease,transform 180ms ease; white-space:nowrap; } .button:hover { background:var(--ink); transform:translateY(-2px); } .button.secondary { background:transparent; border-color:var(--ink); color:var(--ink); }
+    .menu-toggle { align-items:center; background:var(--white); border:1px solid var(--line); border-radius:999px; color:var(--ink); cursor:pointer; display:none; font:inherit; font-size:.88rem; font-weight:900; gap:.55rem; min-height:40px; padding:0 .85rem; } .menu-icon { display:grid; gap:3px; width:15px; } .menu-icon span { background:currentColor; border-radius:999px; height:2px; transition:opacity 180ms ease,transform 180ms ease; } .nav.is-open .menu-icon span:first-child { transform:translateY(5px) rotate(45deg); } .nav.is-open .menu-icon span:nth-child(2) { opacity:0; } .nav.is-open .menu-icon span:last-child { transform:translateY(-5px) rotate(-45deg); }
+    .hero { background:var(--white); display:grid; grid-template-columns:minmax(390px,1fr) minmax(440px,1fr); min-height:calc(100vh - 96px); } .hero-copy { align-items:center; display:flex; justify-content:center; padding:clamp(2rem,7vw,7rem); } .hero-inner { max-width:590px; } .hero-image { height:100%; min-height:560px; object-fit:cover; object-position:center; width:100%; }
+    .eyebrow,.label,.card-kicker { color:var(--brand); display:block; font-size:.74rem; font-weight:900; letter-spacing:.16em; margin-bottom:.8rem; text-transform:uppercase; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; font-weight:500; letter-spacing:0; line-height:1.02; } h1 { font-size:clamp(2.8rem,6vw,5.7rem); margin-bottom:1rem; } h2 { font-size:clamp(2rem,3.7vw,3.6rem); } h3 { line-height:1.25; }
+    .lead { font-size:clamp(1.04rem,1.5vw,1.25rem); font-weight:800; margin-bottom:1rem; } .hero p:not(.eyebrow):not(.lead),.section-head p,.gift-card p,.text-card p,.step p,.contact-card p,.theme-card span { color:var(--muted); } .hero p:not(.eyebrow):not(.lead) { margin-bottom:.88rem; }
+    .benefits { display:grid; gap:.54rem; list-style:none; margin:1.3rem 0 1.6rem; } .benefits li { color:var(--muted); font-size:.95rem; padding-left:1.35rem; position:relative; } .benefits li::before { color:var(--brand); content:"\2713"; font-weight:900; left:0; position:absolute; top:0; } .actions { display:flex; flex-wrap:wrap; gap:.8rem; }
+    section { padding:clamp(2.5rem,5vw,5.5rem) 5vw; } .section-head { align-items:end; display:flex; gap:1.5rem; justify-content:space-between; margin:0 auto 1.8rem; max-width:1180px; } .section-head p { max-width:470px; }
+    .gift-grid,.info-grid,.steps,.theme-grid,.gallery-grid,.contact-grid { margin:0 auto; max-width:1180px; }
+    .gift-grid { display:grid; gap:1rem; grid-template-columns:repeat(3,minmax(0,1fr)); } .gift-card,.text-card,.step,.theme-card,.contact-card,.gift-note { background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-soft); }
+    .gift-card { display:flex; flex-direction:column; min-height:380px; padding:1.45rem; } .gift-card.featured { border-color:rgba(125,142,149,.72); box-shadow:0 0 0 2px rgba(125,142,149,.22),0 0 34px rgba(125,142,149,.24),var(--shadow); } .gift-card h3 { font-size:1.5rem; } .price { font-family:Georgia,"Times New Roman",serif; font-size:3rem; line-height:1; margin:.8rem 0 .5rem; } .gift-card ul { color:var(--muted); display:grid; gap:.55rem; list-style:none; margin:1rem 0 1.35rem; } .gift-card li::before { color:var(--ink); content:"-"; font-weight:900; margin-right:.42rem; } .gift-card .button { align-self:flex-start; background:var(--ink); margin-top:auto; min-height:42px; padding:.56rem 1.05rem; } .gift-card .button:hover { background:var(--brand); }
+    .info { background:var(--mist); } .info-grid { align-items:stretch; display:grid; gap:1rem; grid-template-columns:minmax(0,.9fr) minmax(380px,1fr); } .text-card { align-content:center; display:grid; gap:.95rem; padding:clamp(1.4rem,3.3vw,3.2rem); } .info-image { border-radius:8px; box-shadow:var(--shadow); height:100%; min-height:440px; object-fit:cover; width:100%; }
+    .steps { display:grid; gap:1rem; grid-template-columns:repeat(3,minmax(0,1fr)); } .step { padding:1.35rem; } .step-number { align-items:center; background:var(--soft); border-radius:999px; display:inline-flex; font-weight:900; height:36px; justify-content:center; margin-bottom:1rem; width:36px; } .step h3 { font-size:1.18rem; margin-bottom:.4rem; }
+    .theme-grid { display:grid; gap:1rem; grid-template-columns:repeat(4,minmax(0,1fr)); } .theme-card { overflow:hidden; } .theme-card img { aspect-ratio:4 / 3; height:auto; object-fit:cover; width:100%; } .theme-card div { padding:1rem; } .theme-card strong { display:block; font-size:1.08rem; margin-bottom:.25rem; } .theme-card span { display:block; font-size:.94rem; }
+    .gallery { background:var(--white); } .gallery-grid { display:grid; gap:1rem; grid-template-columns:1.2fr .9fr .9fr; } .gallery-grid img { border-radius:8px; height:100%; min-height:260px; object-fit:cover; width:100%; } .gallery-grid img:first-child { grid-row:span 2; min-height:520px; }
+    .contact-grid { display:grid; gap:1rem; grid-template-columns:minmax(320px,.84fr) 1fr; } .contact-card,.gift-note { padding:clamp(1.25rem,2.6vw,2.4rem); } .contact-card h2,.gift-note h2,.text-card h2 { font-size:clamp(1.9rem,3vw,3rem); } .contact-list { display:grid; gap:.7rem; list-style:none; margin:1.2rem 0 1.45rem; } .contact-list li { color:var(--muted); } .contact-list span { color:var(--ink); display:block; font-size:.76rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; } .gift-note { background:linear-gradient(135deg,var(--white),var(--mist)); display:grid; gap:1rem; } .occasion-list { display:flex; flex-wrap:wrap; gap:.65rem; list-style:none; } .occasion-list li { background:var(--soft); border:1px solid var(--line); border-radius:999px; color:var(--ink); font-size:.9rem; font-weight:800; padding:.4rem .72rem; }
+    footer { background:var(--ink); color:rgba(255,255,255,.82); padding:1.1rem 5vw; text-align:center; }
+    @media (max-width:980px) { .hero,.info-grid,.contact-grid { grid-template-columns:1fr; } .hero-image { min-height:500px; order:-1; } .gift-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .theme-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .steps { grid-template-columns:1fr; } .gallery-grid img:first-child,.info-image { min-height:350px; } .section-head { align-items:start; flex-direction:column; } }
+    @media (max-width:640px) { .topbar { font-size:.74rem; line-height:1.3; padding:.45rem .85rem; } .nav { align-items:stretch; display:block; padding:.75rem .85rem .7rem; } .nav-main { width:100%; } .logo img { height:28px; max-width:132px; } .logo-city { font-size:.76rem; padding-left:.48rem; } .menu-toggle { display:inline-flex; } .nav-links { background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-soft); display:grid; font-size:.94rem; gap:0; max-height:0; opacity:0; overflow:hidden; padding:0 .85rem; pointer-events:none; transform:translateY(-8px); transition:max-height 220ms ease,opacity 180ms ease,padding 220ms ease,transform 180ms ease,margin-top 220ms ease; } .nav-links > a:not(.button) { align-items:center; border-bottom:1px solid var(--line); display:flex; min-height:46px; } .nav-links .button { margin-top:.8rem; width:100%; } .nav.is-open .nav-links { margin-top:.75rem; max-height:340px; opacity:1; padding-bottom:.85rem; padding-top:.15rem; pointer-events:auto; transform:translateY(0); } .hero-image { min-height:330px; } .hero-copy { padding:2rem .85rem 2.6rem; } h1 { font-size:2.2rem; } .actions,.gift-grid,.theme-grid,.gallery-grid { display:grid; grid-template-columns:1fr; } .actions .button,.contact-card .button { width:100%; } section { padding-left:.85rem; padding-right:.85rem; } .gift-card,.text-card,.step,.contact-card,.gift-note { min-height:auto; padding:1rem; } .gallery-grid img,.gallery-grid img:first-child,.info-image { grid-row:auto; min-height:220px; } }
+  
+    /* Sitewide polish pass */
+    .button {
+      box-shadow: 0 12px 28px rgba(52, 70, 72, 0.18);
+      letter-spacing: 0.01em;
+    }
+
+    .button:hover {
+      box-shadow: 0 16px 36px rgba(52, 70, 72, 0.22);
+    }
+
+    .price-card,
+    .theme-card,
+    .gift-card,
+    .review-card,
+    .contact-card,
+    .studio-card,
+    .use-card,
+    .step,
+    .text,
+    .text-card {
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .price-card:hover,
+    .theme-card:hover,
+    .gift-card:hover,
+    .use-card:hover,
+    .step:hover {
+      border-color: rgba(125, 142, 149, 0.46);
+      box-shadow: 0 18px 46px rgba(52, 70, 72, 0.14);
+      transform: translateY(-3px);
+    }
+
+    .price-card.featured {
+      border-color: var(--brand) !important;
+      box-shadow: 0 0 0 2px rgba(125, 142, 149, 0.26), 0 20px 60px rgba(52, 70, 72, 0.18) !important;
+      transform: translateY(-5px);
+    }
+
+    .choice-badge,
+    .label,
+    .eyebrow,
+    .price-subtitle {
+      letter-spacing: 0.13em;
+    }
+
+    .lead {
+      color: var(--ink);
+    }
+
+    .section-head h2::after,
+    .text h2::after,
+    .text-card h2::after {
+      background: var(--brand);
+      border-radius: 999px;
+      content: "";
+      display: block;
+      height: 3px;
+      margin-top: 0.8rem;
+      width: 56px;
+    }
+
+    .hero-image,
+    .gallery-grid img,
+    .text-image,
+    .info-image {
+      filter: saturate(1.04) contrast(1.02);
+    }
+    }
+</style>
+</head>
+<body>
+  <div class="topbar">Geef een fotoshoot cadeau in Utrecht voor een herinnering die blijft.</div>
+  <nav class="nav" aria-label="Hoofdnavigatie"><div class="nav-main"><a class="logo" href="index.html"><img src="https://fotoshoot.nl/wp-content/uploads/2017/09/logo.png" alt="Fotoshoot.nl"><span class="logo-city">Utrecht</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="gift-menu"><span>Menu</span><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button></div><div class="nav-links" id="gift-menu"><a href="index.html">Home</a><a href="#cadeaubonnen">Cadeaubonnen</a><a href="#themas">Thema&rsquo;s</a><a href="contact.html">Contact</a><a class="button" href="https://fotoshoot.nl/boeken/">Bestel</a></div></nav>
+  <main>
+    <section class="hero"><div class="hero-copy"><div class="hero-inner"><p class="eyebrow">Fotoshoot cadeau</p><h1>Cadeaubon Utrecht</h1><p class="lead">Geef een fotoshoot cadeau.</p><p>Portret, familie, love, glamour of een ander thema. De ontvanger kiest.</p><ul class="benefits"><li>Vanaf &euro;35</li><li>Veel thema&rsquo;s</li><li>Voor jezelf of iemand anders</li><li>Begeleid door een fotograaf</li></ul><div class="actions"><a class="button" href="https://fotoshoot.nl/boeken/">Bestel cadeaubon</a><a class="button secondary" href="#cadeaubonnen">Bekijk opties</a></div></div></div><img class="hero-image" src="https://fotoshoot.nl/wp-content/uploads/2021/01/vrijgezellenfeest-fotosessie2.jpg" alt="Fotoshoot cadeaubon voor een professionele fotoshoot cadeau"></section>
+    <section id="cadeaubonnen"><div class="section-head"><h2>Kies een fotoshoot cadeaubon.</h2><p>Start met het soort shoot en laat de ontvanger genieten van foto&rsquo;s, aandacht en een passend thema.</p></div><div class="gift-grid"><article class="gift-card"><span class="card-kicker">Portretshoot</span><h3>Persoonlijk cadeau</h3><div class="price">v.a. &euro;35</div><p>Voor een portret, profielbeeld of een fotoshoot voor jezelf.</p><ul><li>Fotograaf en begeleiding</li><li>Keuze uit studio, park of strand</li><li>Geschikt voor kleine en grote groepen</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Bestel portret</a></article><article class="gift-card featured"><span class="card-kicker">Familie</span><h3>Samen cadeau</h3><div class="price">v.a. &euro;35</div><p>Voor gezin, familie, generaties en een blijvende herinnering samen.</p><ul><li>Familie- en groepscombinaties</li><li>Spontane foto&rsquo;s met begeleiding</li><li>Een cadeau dat samen beleefd wordt</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Bestel familie</a></article><article class="gift-card"><span class="card-kicker">Specials</span><h3>Extra beleving</h3><div class="price">v.a. &euro;169</div><p>Voor glamour, visagie of een fotoshoot met extra styling.</p><ul><li>Haar en visagie mogelijk</li><li>Meerdere decors en outfits</li><li>Voor een opvallend fotoshoot cadeau</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Bestel special</a></article></div></section>
+    <section class="info"><div class="info-grid"><article class="text-card"><p class="label">Cadeau met keuze</p><h2>Past bij elk moment.</h2><p>Voor een nieuw portret, een familieherinnering of een leuke ervaring samen.</p><p>Kies later het thema dat past.</p></article><img class="info-image" src="https://fotoshoot.nl/wp-content/uploads/2017/12/friends-fotoshoot.jpg" alt="Vriendinnen fotoshoot als cadeau ervaring"></div></section>
+    <section aria-label="Hoe werkt een fotoshoot cadeaubon"><div class="section-head"><h2>Zo werkt het cadeau.</h2><p>Houd het duidelijk voor de gever en makkelijk voor de ontvanger.</p></div><div class="steps"><article class="step"><span class="step-number">1</span><h3>Kies de cadeaubon</h3><p>Kies het type fotoshoot en het pakket dat bij het cadeau past.</p></article><article class="step"><span class="step-number">2</span><h3>Geef de belevenis</h3><p>De cadeaubon maakt van een verjaardag, jubileum of verrassing iets persoonlijks.</p></article><article class="step"><span class="step-number">3</span><h3>Plan de shoot</h3><p>De fotoshoot wordt geboekt met thema, locatie en begeleiding van de fotograaf.</p></article></div></section>
+    <section id="themas"><div class="section-head"><h2>Populaire cadeaubon thema&rsquo;s.</h2><p>Een fotoshoot cadeau kan rustig, liefdevol, feestelijk of juist professioneel zijn.</p></div><div class="theme-grid"><article class="theme-card"><img src="https://fotoshoot.nl/wp-content/uploads/2020/11/portret-foto-laten-maken.jpg" alt="Portretshoot cadeaubon"><div><strong>Portretshoot</strong><span>Voor nieuwe foto&rsquo;s van jezelf of een persoonlijk profiel.</span></div></article><article class="theme-card"><img src="https://fotoshoot.nl/wp-content/uploads/2026/05/Grote-familiefoto-blije-man.webp" alt="Familieshoot cadeaubon"><div><strong>Familieshoot</strong><span>Voor gezin, familie of meerdere generaties samen.</span></div></article><article class="theme-card"><img src="https://fotoshoot.nl/wp-content/uploads/2025/05/valentijnshoot-love-fotoshoot.nl_.jpg" alt="Love shoot cadeaubon"><div><strong>Love shoot</strong><span>Voor koppels, jubileum, verloving of Valentijn.</span></div></article><article class="theme-card"><img src="https://fotoshoot.nl/wp-content/uploads/2019/09/before_after-2.jpg" alt="Glamour fotoshoot cadeaubon"><div><strong>Glamour</strong><span>Voor uitstraling, styling en een bijzondere studio-ervaring.</span></div></article></div></section>
+    <section class="gallery" aria-label="Fotoshoot cadeau voorbeelden"><div class="section-head"><h2>Cadeau voorbeelden.</h2><p>Portret, samen en bijzonder.</p></div><div class="gallery-grid"><img src="https://fotoshoot.nl/wp-content/uploads/2025/04/Fotoshoot-Verjaardagshoot.jpg" alt="Verjaardag fotoshoot cadeau voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2023/06/vader-en-zoon-babyfotograaf.jpg" alt="Baby fotoshoot cadeau voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2017/12/liefdesshoot-046a.jpg" alt="Love shoot cadeau voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FOTOSHOOT.NL_916.jpg" alt="Model fotoshoot cadeau voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2017/12/zwanger-fotoshoot.jpg" alt="Zwangerschap fotoshoot cadeau voorbeeld"></div></section>
+    <section id="contact"><div class="contact-grid"><aside class="contact-card"><p class="label">Bestellen</p><h2>Geef een fotoshoot cadeau.</h2><p>Bestel direct of stem je thema af.</p><ul class="contact-list"><li><span>Bel</span><a href="tel:+31613600773">06 1360 0773</a></li><li><span>Mail</span><a href="mailto:info@fotoshoot.nl">info@fotoshoot.nl</a></li><li><span>Openingstijden</span>Maandag t/m vrijdag 9:00-20:00<br>Zaterdag en zondag 9:00-19:00</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Bestel direct</a></aside><article class="gift-note"><p class="label">Gelegenheden</p><h2>Voor elk cadeau.</h2><p>Voor iemand anders of voor jezelf.</p><ul class="occasion-list"><li>Verjaardag</li><li>Jubileum</li><li>Moederdag</li><li>Vaderdag</li><li>Valentijn</li><li>Afstuderen</li><li>Vrijgezellenfeest</li><li>Feestdagen</li></ul></article></div></section>
+  </main>
+  <footer><p>&copy; 2026 Fotoshoot Utrecht. Fotoshoot cadeaubonnen en professionele fotoshoots.</p></footer>
+  <script>const giftNav=document.querySelector(".nav");const giftToggle=document.querySelector(".menu-toggle");const giftLinks=document.querySelectorAll("#gift-menu a");if(giftNav&&giftToggle){giftToggle.addEventListener("click",()=>{const open=giftNav.classList.toggle("is-open");giftToggle.setAttribute("aria-expanded",String(open));});giftLinks.forEach((link)=>link.addEventListener("click",()=>{giftNav.classList.remove("is-open");giftToggle.setAttribute("aria-expanded","false");}));}</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Fotoshoot Utrecht | Fotoshoot.nl</title>
+  <meta name="description" content="Boek een baby fotoshoot in Utrecht bij Fotoshoot.nl. Baby & Kids fotografie voor newborn, peuter, ouders en gezin in studio, park of strand.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root { --ink:#344648; --muted:#62777c; --paper:#fbf4ee; --soft:#fbe0c3; --line:#ead2c0; --brand:#7d8e95; --mist:#fff8f3; --white:#fff; --shadow:0 22px 70px rgba(52,70,72,.16); --shadow-soft:0 12px 34px rgba(52,70,72,.1); }
+    * { box-sizing:border-box; margin:0; padding:0; } html { scroll-behavior:smooth; }
+    body { background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+    .topbar { background:var(--ink); color:var(--white); font-size:.9rem; padding:.55rem 5vw; text-align:center; }
+    .nav { align-items:center; backdrop-filter:blur(18px); background:rgba(255,255,255,.94); border-bottom:1px solid var(--line); display:flex; gap:1.5rem; justify-content:space-between; padding:1rem 5vw; position:sticky; top:0; z-index:10; }
+    .nav-main,.logo,.nav-links { align-items:center; display:flex; } .nav-main { justify-content:space-between; } .logo { gap:.7rem; } .logo img { height:36px; width:auto; }
+    .logo-city { border-left:1px solid var(--line); color:var(--brand); font-size:.95rem; font-weight:900; padding-left:.7rem; }
+    .nav-links { color:var(--muted); font-size:.95rem; gap:1.35rem; } .nav-links > a:not(.button):hover { color:var(--ink); }
+    .button { align-items:center; background:var(--brand); border:1px solid transparent; border-radius:999px; color:var(--white); display:inline-flex; font-weight:800; justify-content:center; min-height:46px; padding:.75rem 1.25rem; transition:background 180ms ease,border-color 180ms ease,transform 180ms ease; white-space:nowrap; }
+    .button:hover { background:var(--ink); transform:translateY(-2px); } .button.secondary { background:transparent; border-color:var(--ink); color:var(--ink); }
+    .menu-toggle { align-items:center; background:var(--white); border:1px solid var(--line); border-radius:999px; color:var(--ink); cursor:pointer; display:none; font:inherit; font-size:.88rem; font-weight:900; gap:.55rem; min-height:40px; padding:0 .85rem; }
+    .menu-icon { display:grid; gap:3px; width:15px; } .menu-icon span { background:currentColor; border-radius:999px; height:2px; transition:opacity 180ms ease,transform 180ms ease; }
+    .nav.is-open .menu-icon span:first-child { transform:translateY(5px) rotate(45deg); } .nav.is-open .menu-icon span:nth-child(2) { opacity:0; } .nav.is-open .menu-icon span:last-child { transform:translateY(-5px) rotate(-45deg); }
+    .hero { background:var(--white); display:grid; grid-template-columns:minmax(390px,1fr) minmax(460px,1fr); min-height:calc(100vh - 96px); }
+    .hero-copy { align-items:center; display:flex; justify-content:center; padding:clamp(2rem,7vw,7.5rem); } .hero-inner { max-width:560px; }
+    .eyebrow,.label,.price-subtitle { color:var(--brand); display:block; font-size:.74rem; font-weight:900; letter-spacing:.16em; margin-bottom:.85rem; text-transform:uppercase; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; font-weight:500; letter-spacing:0; line-height:1.02; } h1 { font-size:clamp(2.7rem,5.8vw,5.6rem); margin-bottom:1rem; } h2 { font-size:clamp(2rem,3.6vw,3.55rem); } h3 { line-height:1.25; }
+    .lead { font-size:clamp(1.04rem,1.4vw,1.24rem); font-weight:700; margin-bottom:1rem; }
+    .hero-copy p:not(.eyebrow):not(.lead),.section-head p,.text p,.step p,.contact-card p,.studio-card p { color:var(--muted); } .hero-copy p:not(.eyebrow):not(.lead) { margin-bottom:.85rem; }
+    .benefits { display:grid; gap:.52rem; list-style:none; margin:1.35rem 0 1.55rem; } .benefits li { color:var(--muted); font-size:.95rem; padding-left:1.35rem; position:relative; } .benefits li::before { color:var(--brand); content:"\2713"; font-weight:900; left:0; position:absolute; top:0; }
+    .actions { display:flex; flex-wrap:wrap; gap:.8rem; } .hero-image { height:100%; min-height:560px; object-fit:cover; object-position:center; width:100%; }
+    section { padding:clamp(2.4rem,5vw,5.4rem) 5vw; } .section-head { align-items:end; display:flex; gap:1.5rem; justify-content:space-between; margin:0 auto 1.8rem; max-width:1180px; } .section-head p { max-width:450px; }
+    .price-grid,.info-grid,.steps,.gallery-grid,.contact-grid { margin:0 auto; max-width:1180px; } .price-grid { display:grid; gap:1rem; grid-template-columns:repeat(4,minmax(0,1fr)); padding-top:1.25rem; }
+    .price-card,.text,.step,.contact-card,.studio-card { background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-soft); }
+    .price-card { display:flex; flex-direction:column; min-height:520px; padding:1.75rem 1.2rem 1.2rem; position:relative; } .price-card.featured { border-color:var(--soft); box-shadow:0 0 0 2px rgba(251,224,195,.95),0 0 28px rgba(251,224,195,.55),var(--shadow); }
+    .choice-badge { background:var(--soft); border:1px solid var(--line); border-radius:999px; box-shadow:0 8px 22px rgba(52,70,72,.14); display:inline-flex; font-size:.72rem; font-weight:900; left:50%; letter-spacing:.12em; padding:.36rem .72rem; position:absolute; text-transform:uppercase; top:0; transform:translate(-50%,-50%); white-space:nowrap; }
+    .price-subtitle { margin-bottom:.45rem; } .price-card h3 { font-size:1.42rem; } .amount { font-family:Georgia,"Times New Roman",serif; font-size:2.9rem; line-height:1.1; margin:.65rem 0 .35rem; }
+    .price-card ul { color:var(--muted); display:grid; gap:.54rem; list-style:none; margin:1rem 0 1.2rem; } .price-card li::before { color:var(--ink); content:"-"; font-weight:900; margin-right:.4rem; }
+    .price-card .button { align-self:flex-start; background:var(--ink); border-color:var(--ink); box-shadow:0 11px 24px rgba(52,70,72,.22); font-size:.92rem; font-weight:900; margin-top:auto; min-height:42px; padding:.56rem 1.08rem; } .price-card .button:hover { background:var(--brand); border-color:var(--brand); }
+    .explain { background:var(--mist); } .info-grid { align-items:stretch; display:grid; gap:1rem; grid-template-columns:minmax(0,.92fr) minmax(360px,1fr); }
+    .text { align-content:center; display:grid; gap:.95rem; padding:clamp(1.4rem,3.4vw,3.3rem); } .text h2,.contact-card h2,.studio-card h2 { font-size:clamp(1.9rem,3vw,3rem); } .text-image { border-radius:8px; box-shadow:var(--shadow); height:100%; min-height:440px; object-fit:cover; width:100%; }
+    .steps { display:grid; gap:1rem; grid-template-columns:repeat(3,1fr); } .step { padding:1.35rem; } .step span { align-items:center; background:var(--soft); border-radius:999px; display:inline-flex; font-weight:900; height:34px; justify-content:center; margin-bottom:1rem; width:34px; } .step h3 { font-size:1.18rem; margin-bottom:.45rem; }
+    .gallery { background:var(--white); } .gallery-grid { display:grid; gap:1rem; grid-template-columns:1.2fr .9fr .9fr; } .gallery-grid img { border-radius:8px; height:100%; min-height:260px; object-fit:cover; width:100%; } .gallery-grid img:first-child { grid-row:span 2; min-height:520px; }
+    .contact-grid { display:grid; gap:1rem; grid-template-columns:minmax(320px,.8fr) 1fr; } .contact-card,.studio-card { padding:clamp(1.25rem,2.6vw,2.4rem); } .contact-list { display:grid; gap:.7rem; list-style:none; margin:1.2rem 0 1.45rem; } .contact-list li,.location p { color:var(--muted); } .contact-list span { color:var(--ink); display:block; font-size:.76rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+    .location-grid { display:grid; gap:.85rem; grid-template-columns:repeat(2,1fr); margin-top:1.25rem; } .location { background:var(--mist); border:1px solid var(--line); border-radius:8px; padding:1rem; } .location h3 { font-size:1rem; margin-bottom:.28rem; } footer { background:var(--ink); color:rgba(255,255,255,.82); padding:1.1rem 5vw; text-align:center; }
+    @media (max-width:980px) { .hero,.info-grid,.contact-grid { grid-template-columns:1fr; } .hero-image { min-height:520px; order:-1; } .price-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .steps { grid-template-columns:1fr; } .gallery-grid img:first-child,.text-image { min-height:350px; } .section-head { align-items:start; flex-direction:column; } }
+    @media (max-width:640px) { .topbar { font-size:.74rem; line-height:1.3; padding:.45rem .85rem; } .nav { align-items:stretch; display:block; padding:.75rem .85rem .7rem; } .nav-main { width:100%; } .logo img { height:28px; max-width:132px; } .logo-city { font-size:.76rem; padding-left:.48rem; } .menu-toggle { display:inline-flex; } .nav-links { background:var(--white); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-soft); display:grid; font-size:.94rem; gap:0; max-height:0; opacity:0; overflow:hidden; padding:0 .85rem; pointer-events:none; transform:translateY(-8px); transition:max-height 220ms ease,opacity 180ms ease,padding 220ms ease,transform 180ms ease,margin-top 220ms ease; } .nav-links > a:not(.button) { align-items:center; border-bottom:1px solid var(--line); display:flex; min-height:46px; } .nav-links .button { margin-top:.8rem; width:100%; } .nav.is-open .nav-links { margin-top:.75rem; max-height:340px; opacity:1; padding-bottom:.85rem; padding-top:.15rem; pointer-events:auto; transform:translateY(0); } .hero-image { min-height:340px; } .hero-copy { padding:2rem .85rem 2.6rem; } h1 { font-size:2.27rem; } .actions,.price-grid,.gallery-grid,.location-grid { display:grid; grid-template-columns:1fr; } .actions .button,.contact-card .button { width:100%; } section { padding-left:.85rem; padding-right:.85rem; } .price-card,.text,.step,.contact-card,.studio-card { min-height:auto; padding:1rem; } .gallery-grid img,.gallery-grid img:first-child,.text-image { grid-row:auto; min-height:220px; } }
+  
+    /* Sitewide polish pass */
+    .button {
+      box-shadow: 0 12px 28px rgba(52, 70, 72, 0.18);
+      letter-spacing: 0.01em;
+    }
+
+    .button:hover {
+      box-shadow: 0 16px 36px rgba(52, 70, 72, 0.22);
+    }
+
+    .price-card,
+    .theme-card,
+    .gift-card,
+    .review-card,
+    .contact-card,
+    .studio-card,
+    .use-card,
+    .step,
+    .text,
+    .text-card {
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .price-card:hover,
+    .theme-card:hover,
+    .gift-card:hover,
+    .use-card:hover,
+    .step:hover {
+      border-color: rgba(125, 142, 149, 0.46);
+      box-shadow: 0 18px 46px rgba(52, 70, 72, 0.14);
+      transform: translateY(-3px);
+    }
+
+    .price-card.featured {
+      border-color: var(--brand) !important;
+      box-shadow: 0 0 0 2px rgba(125, 142, 149, 0.26), 0 20px 60px rgba(52, 70, 72, 0.18) !important;
+      transform: translateY(-5px);
+    }
+
+    .choice-badge,
+    .label,
+    .eyebrow,
+    .price-subtitle {
+      letter-spacing: 0.13em;
+    }
+
+    .lead {
+      color: var(--ink);
+    }
+
+    .section-head h2::after,
+    .text h2::after,
+    .text-card h2::after {
+      background: var(--brand);
+      border-radius: 999px;
+      content: "";
+      display: block;
+      height: 3px;
+      margin-top: 0.8rem;
+      width: 56px;
+    }
+
+    .hero-image,
+    .gallery-grid img,
+    .text-image,
+    .info-image {
+      filter: saturate(1.04) contrast(1.02);
+    }
+    }
+</style>
+</head>
+<body>
+  <div class="topbar">Baby & Kids fotoshoot in Utrecht voor newborn, baby, peuter en gezin.</div>
+  <nav class="nav" aria-label="Hoofdnavigatie"><div class="nav-main"><a class="logo" href="index.html"><img src="https://fotoshoot.nl/wp-content/uploads/2017/09/logo.png" alt="Fotoshoot.nl"><span class="logo-city">Utrecht</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="baby-menu"><span>Menu</span><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button></div><div class="nav-links" id="baby-menu"><a href="index.html">Home</a><a href="#prijzen">Prijzen</a><a href="#informatie">Informatie</a><a href="contact.html">Contact</a><a class="button" href="https://fotoshoot.nl/boeken/">Boek direct</a></div></nav>
+  <main>
+    <section class="hero"><div class="hero-copy"><div class="hero-inner"><p class="eyebrow">Babyfotografie</p><h1>Baby Fotoshoot Utrecht</h1><p class="lead">Zachte babyfoto&rsquo;s. Rustig begeleid.</p><p>Voor newborn, baby, kids en korte gezinsmomenten in studio, park of strand.</p><ul class="benefits"><li>Baby fotoshoot met begeleiding</li><li>Newborn, baby en kids</li><li>Studio, park of strand</li><li>Vanaf &euro;35,-</li></ul><div class="actions"><a class="button" href="https://fotoshoot.nl/boeken/">Boek direct</a><a class="button secondary" href="#prijzen">Bekijk pakketten</a></div></div></div><img class="hero-image" src="https://fotoshoot.nl/wp-content/uploads/2024/01/Baby-in-basket2.png" alt="Baby fotoshoot in Utrecht met newborn in studio"></section>
+    <section id="prijzen"><div class="section-head"><h2>Baby & Kids fotoshoot pakketten.</h2><p>Kies hoeveel tijd, decors en babyfoto&rsquo;s passen bij jullie fotoshoot.</p></div><div class="price-grid"><article class="price-card"><span class="price-subtitle">Baby &amp; Kids</span><h3>Baby Small</h3><div class="amount">&euro;35</div><ul><li>Fotograaf &amp; fotostudio 0-30 minuten</li><li>0-25 opnames, keuze uit een foto</li><li>Keuze: print of digitaal</li><li>Locatie: strand, park of fotostudio</li><li>Fotoset: 1 decor</li><li>Extra foto&rsquo;s na te bestellen</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek Small</a></article><article class="price-card featured"><span class="choice-badge">Meest gekozen</span><span class="price-subtitle">Baby &amp; Kids</span><h3>Baby Medium</h3><div class="amount">&euro;159</div><ul><li>Fotograaf &amp; fotostudio 0-45 minuten</li><li>0-75 opnames, keuze uit 0-10 foto&rsquo;s</li><li>Keuze: print of digitaal</li><li>Locatie: strand, park of fotostudio</li><li>2 decors of props</li><li>Extra foto&rsquo;s na te bestellen</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek Medium</a></article><article class="price-card"><span class="price-subtitle">Baby &amp; Kids</span><h3>Baby Large</h3><div class="amount">&euro;249</div><ul><li>Fotograaf &amp; fotostudio 0-60 minuten</li><li>0-120 opnames, keuze uit 0-50 stuks</li><li>Keuze: print &amp; digitaal</li><li>Inclusief 2 luxe prints</li><li>Locatie: strand, park of fotostudio</li><li>Baby &amp; familie combinaties</li><li>3 decors of props bij studio</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek Large</a></article><article class="price-card"><span class="price-subtitle">Baby &amp; Kids</span><h3>Baby XL</h3><div class="amount">&euro;339</div><ul><li>Fotograaf &amp; fotostudio 0-60 minuten plus</li><li>0-150 opnames, keuze uit 0-75 stuks</li><li>Keuze: print &amp; digitaal</li><li>Inclusief 10 luxe prints</li><li>Locatie: strand, park of fotostudio</li><li>Baby &amp; familie combinaties</li><li>3-4 decors of props bij studio</li><li>Begeleiding &amp; eigen idee&euml;n</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek XL</a></article></div></section>
+    <section class="explain" id="informatie"><div class="info-grid"><article class="text"><p class="label">Newborn en kids</p><h2>Zacht, rustig en persoonlijk.</h2><p>We werken met geduld, props en achtergronden die bij jullie passen.</p><p>Neem gerust een doek, knuffel of extra outfit mee.</p></article><img class="text-image" src="https://fotoshoot.nl/wp-content/uploads/2023/06/vader-en-zoon-babyfotograaf.jpg" alt="Babyfotograaf maakt foto van vader en baby"></div></section>
+    <section aria-label="Zo werkt een baby fotoshoot"><div class="section-head"><h2>Zo verloopt de baby fotoshoot.</h2><p>De shoot wordt rustig begeleid en afgestemd op baby, kids en ouders.</p></div><div class="steps"><article class="step"><span>1</span><h3>Ontvangst</h3><p>We bespreken jullie wensen, outfits, props en combinaties voor de shoot.</p></article><article class="step"><span>2</span><h3>Baby &amp; kids op foto</h3><p>De fotograaf werkt met decors, begeleiding en ruimte voor spontane momenten.</p></article><article class="step"><span>3</span><h3>Kies favorieten</h3><p>Bekijk na de fotoshoot de babyfoto&rsquo;s en selecteer jullie mooiste beelden.</p></article></div></section>
+    <section class="gallery" aria-label="Baby en kids fotoshoot voorbeelden"><div class="section-head"><h2>Baby voorbeelden.</h2><p>Zachte foto&rsquo;s met baby, kids en ouders.</p></div><div class="gallery-grid"><img src="https://fotoshoot.nl/wp-content/uploads/2023/06/vaderdag-fotoshoot.jpg" alt="Vader en kind fotoshoot voorbeeld"><img src="https://fotoshoot.nl/wp-content/uploads/2025/05/Moederdag-familie-fotograaf.jpg" alt="Gezinsfoto met kind"><img src="https://fotoshoot.nl/wp-content/uploads/2023/05/familie-foto-laten-maken.jpg" alt="Familiefoto met kind"><img src="https://fotoshoot.nl/wp-content/uploads/2026/05/Grote-familiefoto-blije-man.webp" alt="Familiefoto met jonge kinderen"><img src="https://fotoshoot.nl/wp-content/uploads/2017/12/familie_foto040.jpg" alt="Gezinsfoto in de studio"></div></section>
+    <section id="contact"><div class="contact-grid"><aside class="contact-card"><p class="label">Boeken</p><h2>Plan jullie baby fotoshoot.</h2><p>Boek direct of neem contact op voor vragen over newborn, props of baby- en familiecombinaties.</p><ul class="contact-list"><li><span>Bel</span><a href="tel:+31613600773">06 1360 0773</a></li><li><span>Mail</span><a href="mailto:info@fotoshoot.nl">info@fotoshoot.nl</a></li><li><span>Openingstijden</span>Maandag t/m vrijdag 9:00-20:00<br>Zaterdag en zondag 9:00-19:00</li></ul><a class="button" href="https://fotoshoot.nl/boeken/">Boek direct</a></aside><div class="studio-card"><h2>Fotostudio Utrecht</h2><p>Voor babyfoto&rsquo;s, kidsfoto&rsquo;s en rustige gezinsbeelden op afspraak.</p><div class="location-grid"><article class="location"><h3>Adres</h3><p>Herenstraat 23<br>3512 KB Utrecht</p></article><article class="location"><h3>Voor wie</h3><p>Newborn, baby, peuter, broers, zussen en ouders.</p></article><article class="location"><h3>Meenemen</h3><p>Persoonlijke props, doek, knuffel of extra outfit.</p></article><article class="location"><h3>Resultaat</h3><p>Babyportretten en familiecombinaties om te bewaren.</p></article></div></div></div></section>
+  </main><footer><p>&copy; 2026 Fotoshoot Utrecht. Baby & Kids fotoshoots in studio en op locatie.</p></footer>
+  <script>const babyNav=document.querySelector(".nav");const babyToggle=document.querySelector(".menu-toggle");const babyLinks=document.querySelectorAll("#baby-menu a");if(babyNav&&babyToggle){babyToggle.addEventListener("click",()=>{const open=babyNav.classList.toggle("is-open");babyToggle.setAttribute("aria-expanded",String(open));});babyLinks.forEach((link)=>link.addEventListener("click",()=>{babyNav.classList.remove("is-open");babyToggle.setAttribute("aria-expanded","false");}));}</script>
+</body>
+</html>
