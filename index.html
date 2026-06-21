@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fotoshoot Utrecht | Fotostudio Voor Portret, Familie & Zakelijk</title>
-  <meta name="description" content="Fotoshoot Utrecht boeken vanaf €35. Professionele fotostudio voor portret, familie, zakelijk, baby, glamour, love shoot en model fotografie.">
+  <meta name="description" content="Fotoshoot Utrecht boeken vanaf &euro;35. Professionele fotostudio voor portret, familie, zakelijk, baby, glamour, love shoot en model fotografie.">
   <meta name="robots" content="index, follow">
   <script type="application/ld+json">
     {
@@ -626,6 +626,31 @@
       line-height: 1.45;
     }
 
+    .theme-links {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 1.35rem auto 0;
+      max-width: 1180px;
+    }
+
+    .theme-links a {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      font-size: 0.9rem;
+      font-weight: 850;
+      padding: 0.52rem 0.78rem;
+    }
+
+    .theme-links a:hover {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--white);
+    }
+
     .label {
       color: var(--brand-dark);
       display: block;
@@ -637,7 +662,12 @@
     }
 
     .prices {
-      background: var(--white);
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .prices .section-head p {
+      color: rgba(255, 255, 255, 0.72);
     }
 
     .price-grid {
@@ -653,6 +683,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       box-shadow: var(--shadow-soft);
+      color: var(--ink);
       display: flex;
       flex-direction: column;
       min-height: 420px;
@@ -1334,6 +1365,7 @@
     }
 </style>
   <link rel="stylesheet" href="review-strip.css">
+  <link rel="stylesheet" href="site-nav.css">
 </head>
 
 <body id="top">
@@ -1352,12 +1384,10 @@
     </div>
     <div class="nav-links" id="site-menu">
       <a href="#fotoshoots">Fotoshoots</a>
-      <a href="alle-fotoshoots.html">Alle fotoshoots</a>
+      <a href="cadeaubon.html">Cadeaubon</a>
       <a href="#prijzen">Prijzen</a>
       <a href="#werkwijze">Werkwijze</a>
-      <a href="veelgestelde-vragen.html">FAQ</a>
-      <a href="fotoshoot-inspiratie-utrecht.html">Inspiratie</a>
-      <a href="#studio">Studio Utrecht</a>
+      <a href="veelgestelde-vragen.html">Veel gestelde vragen</a>
       <a href="contact.html">Contact</a>
       <a class="button" href="https://fotoshoot.nl/boeken/">Boek nu</a>
     </div>
@@ -1370,8 +1400,8 @@
         <h1>Fotoshoot Utrecht</h1>
         <p>Portret, familie, love, glamour, baby, model en zakelijke fotoshoot in Utrecht. Rustig begeleid in de fotostudio aan de Herenstraat 23.</p>
         <div class="hero-actions">
-          <a class="button light" href="https://fotoshoot.nl/boeken/">Plan je fotoshoot</a>
-          <a class="button secondary" href="#fotoshoots">Bekijk mogelijkheden</a>
+          <a class="button light" href="https://fotoshoot.nl/boeken/">Boek</a>
+          <a class="button secondary" href="#fotoshoots">Thema's</a>
         </div>
 
         <div class="hero-stats" aria-label="Belangrijkste voordelen">
@@ -1478,6 +1508,80 @@
       </div>
     </section>
 
+    <section class="prices" id="prijzen">
+      <div class="section-head">
+        <h2>Prijzen fotoshoot Utrecht.</h2>
+        <p>Kies het pakket dat bij jouw shoot past. Na de fotoshoot kun je extra foto&rsquo;s bijbestellen.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="price-card">
+          <span class="price-subtitle">Start</span>
+          <h3>Small</h3>
+          <p>Voor een korte, duidelijke sessie.</p>
+          <div class="amount">&euro;35</div>
+          <ul>
+            <li>Fotograaf 0-30 min</li>
+            <li>25 foto-opnames</li>
+            <li>Keuze uit een foto</li>
+            <li>Print of digitaal</li>
+            <li>1 decor</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek</a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="choice-badge">Meest gekozen</span>
+          <span class="price-subtitle">Populair pakket</span>
+          <h3>Medium</h3>
+          <p>Meer keuze en meer variatie.</p>
+          <div class="amount">&euro;159</div>
+          <ul>
+            <li>Fotograaf 0-45 min</li>
+            <li>75 foto-opnames</li>
+            <li>Keuze uit 0-10 foto&rsquo;s</li>
+            <li>Print of digitaal</li>
+            <li>2 decors</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek</a>
+        </article>
+
+        <article class="price-card">
+          <span class="price-subtitle">Veel keuze</span>
+          <h3>Large</h3>
+          <p>Voor families, modellen en uitgebreide shoots.</p>
+          <div class="amount">&euro;249</div>
+          <ul>
+            <li>Fotostudio 0-1 uur</li>
+            <li>120 opnames, keuze uit 0-50 stuks</li>
+            <li>Keuze: print of digitaal</li>
+            <li>Inclusief 2 luxe prints</li>
+            <li>Locatie: strand, park of studio</li>
+            <li>Alle familie combinaties</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek</a>
+        </article>
+
+        <article class="price-card">
+          <span class="price-subtitle">Compleet</span>
+          <h3>Extra Large</h3>
+          <p>Voor maximale selectie en luxe prints.</p>
+          <div class="amount">&euro;339</div>
+          <ul>
+            <li>Fotostudio 1 uur plus</li>
+            <li>150 opnames, keuze uit 0-75 stuks</li>
+            <li>Keuze: print of digitaal</li>
+            <li>Inclusief 10 luxe prints</li>
+            <li>Locatie: strand, park of studio</li>
+            <li>Alle familie combinaties</li>
+            <li>Extra foto&rsquo;s na te bestellen</li>
+            <li>Begeleiding &amp; Service</li>
+          </ul>
+          <a class="button" href="https://fotoshoot.nl/boeken/">Boek</a>
+        </article>
+      </div>
+    </section>
+
     <section class="intro" id="over">
       <div class="intro-grid">
         <article class="story">
@@ -1521,138 +1625,18 @@
           </div>
         </a>
 
-        <a class="theme-card" href="zakelijk.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FT0A0078-768x512.jpg" alt="Zakelijke fotoshoot voorbeeld">
+        <a class="theme-card" href="zwangerschap.html">
+          <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/zwanger-fotoshoot.jpg" alt="Zwangerschap fotoshoot Utrecht">
           <div>
-            <span class="label">Business</span>
-            <strong>Zakelijke shoot</strong>
-            <span>LinkedIn, teamfoto&rsquo;s, bedrijfsprofiel en websitefotografie.</span>
+            <span class="label">Belly shoot</span>
+            <strong>Zwangerschap</strong>
+            <span>Belly shoot alleen, met partner of met kinderen.</span>
           </div>
         </a>
       </div>
 
-      <div class="theme-grid" aria-label="Alle fotoshoot thema's">
-        <a class="theme-card" href="glamour.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2019/09/before_after-2.jpg" alt="Glamour fotoshoot voor en na voorbeeld">
-          <div><span class="label">Glamour</span><strong>Glamour fotoshoot</strong><span>Meer uitstraling, styling en een luxe studiosfeer.</span></div>
-        </a>
-        <a class="theme-card" href="loveshoot.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2025/05/valentijnshoot-love-fotoshoot.nl_.jpg" alt="Love shoot voorbeeld">
-          <div><span class="label">Samen</span><strong>Love shoot</strong><span>Voor koppels, verloving, jubileum of cadeau.</span></div>
-        </a>
-        <a class="theme-card" href="vriendinnenshoot.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/friends-fotoshoot.jpg" alt="Vriendinnen fotoshoot in studio">
-          <div><span class="label">Groep</span><strong>Vriendinnen shoot</strong><span>Samen lachen, poseren en foto&rsquo;s maken als herinnering.</span></div>
-        </a>
-        <a class="theme-card" href="model.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FOTOSHOOT.NL_916.jpg" alt="Model fotoshoot voorbeeld">
-          <div><span class="label">Fashion</span><strong>Model fotoshoot</strong><span>Portfolio, fashion, casting of creatieve beelden.</span></div>
-        </a>
-        <a class="theme-card" href="baby.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2024/01/Baby-in-basket2.png" alt="Baby en kids fotoshoot voorbeeld">
-          <div><span class="label">Kids</span><strong>Baby &amp; kids</strong><span>Zachte, spontane foto&rsquo;s van kinderen en jonge gezinnen.</span></div>
-        </a>
-        <a class="theme-card" href="zwangerschap.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/zwanger-fotoshoot.jpg" alt="Zwangerschap fotoshoot voorbeeld">
-          <div><span class="label">Mama</span><strong>Zwangerschap</strong><span>Rustige beelden van een bijzonder moment.</span></div>
-        </a>
-        <a class="theme-card" href="bruiloft.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2019/09/bruidsfotograaf_03.jpg" alt="Bruiloft fotoshoot voorbeeld">
-          <div><span class="label">Liefde</span><strong>Bruiloft</strong><span>Romantische beelden en reportage voor jullie dag.</span></div>
-        </a>
-        <a class="theme-card" href="cadeaubon.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2021/01/vrijgezellenfeest-fotosessie2.jpg" alt="Fotoshoot cadeaubon voorbeeld">
-          <div><span class="label">Cadeau</span><strong>Cadeaubon</strong><span>Een fotoshoot geven als persoonlijk cadeau.</span></div>
-        </a>
-        <a class="theme-card" href="creativeshoot.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/Fotoshoot-Verjaardagshoot.jpg" alt="Creatieve fotoshoot voorbeeld">
-          <div><span class="label">Extra</span><strong>Creatieve shoot</strong><span>Eigen idee, eigen sfeer of een volledig thema op maat.</span></div>
-        </a>
-        <a class="theme-card" href="alle-fotoshoots.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/L15A32734-1024x683.jpg" alt="Overzicht van alle fotoshoots in Utrecht">
-          <div><span class="label">Overzicht</span><strong>Alle fotoshoots</strong><span>Een complete keuzehulp met alle fotoshoot thema&rsquo;s in Utrecht.</span></div>
-        </a>
-        <a class="theme-card" href="veelgestelde-vragen.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2020/11/fotos-maken-in-Utrecht.jpg" alt="Veelgestelde vragen over fotoshoots in Utrecht">
-          <div><span class="label">Info</span><strong>Veelgestelde vragen</strong><span>Antwoorden over prijzen, kleding, locatie, kinderen en extra foto&rsquo;s.</span></div>
-        </a>
-        <a class="theme-card" href="kledingadvies.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/Fotoshoot-Verjaardagshoot.jpg" alt="Kledingadvies fotoshoot Utrecht">
-          <div><span class="label">Tips</span><strong>Kledingadvies</strong><span>Wat trek je aan voor portret, familie, zakelijk of glamour?</span></div>
-        </a>
-      </div>
-    </section>
-    <section class="prices" id="prijzen">
-      <div class="section-head">
-        <h2>Prijzen fotoshoot Utrecht.</h2>
-        <p>Kies het pakket dat bij jouw shoot past. Na de fotoshoot kun je extra foto&rsquo;s bijbestellen.</p>
-      </div>
-
-      <div class="price-grid">
-        <article class="price-card">
-          <span class="price-subtitle">Start</span>
-          <h3>Small</h3>
-          <p>Voor een korte, duidelijke sessie.</p>
-          <div class="amount">&euro;35</div>
-          <ul>
-            <li>Fotograaf 0-30 min</li>
-            <li>25 foto-opnames</li>
-            <li>Keuze uit een foto</li>
-            <li>Print of digitaal</li>
-            <li>1 decor</li>
-          </ul>
-          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Small</a>
-        </article>
-
-        <article class="price-card featured">
-          <span class="choice-badge">Meest gekozen</span>
-          <span class="price-subtitle">Populair pakket</span>
-          <h3>Medium</h3>
-          <p>Meer keuze en meer variatie.</p>
-          <div class="amount">&euro;159</div>
-          <ul>
-            <li>Fotograaf 0-45 min</li>
-            <li>75 foto-opnames</li>
-            <li>Keuze uit 0-10 foto&rsquo;s</li>
-            <li>Print of digitaal</li>
-            <li>2 decors</li>
-          </ul>
-          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Medium</a>
-        </article>
-
-        <article class="price-card">
-          <span class="price-subtitle">Veel keuze</span>
-          <h3>Large</h3>
-          <p>Voor families, modellen en uitgebreide shoots.</p>
-          <div class="amount">&euro;249</div>
-          <ul>
-            <li>Fotostudio 0-1 uur</li>
-            <li>120 opnames, keuze uit 0-50 stuks</li>
-            <li>Keuze: print of digitaal</li>
-            <li>Inclusief 2 luxe prints</li>
-            <li>Locatie: strand, park of studio</li>
-            <li>Alle familie combinaties</li>
-          </ul>
-          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Large</a>
-        </article>
-
-        <article class="price-card">
-          <span class="price-subtitle">Compleet</span>
-          <h3>Extra Large</h3>
-          <p>Voor maximale selectie en luxe prints.</p>
-          <div class="amount">&euro;339</div>
-          <ul>
-            <li>Fotostudio 1 uur plus</li>
-            <li>150 opnames, keuze uit 0-75 stuks</li>
-            <li>Keuze: print of digitaal</li>
-            <li>Inclusief 10 luxe prints</li>
-            <li>Locatie: strand, park of studio</li>
-            <li>Alle familie combinaties</li>
-            <li>Extra foto&rsquo;s na te bestellen</li>
-            <li>Begeleiding &amp; Service</li>
-          </ul>
-          <a class="button" href="https://fotoshoot.nl/boeken/">Boek Extra Large</a>
-        </article>
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a class="button" style="background: var(--ink); color: var(--white); box-shadow: 0 12px 30px rgba(52,70,72,0.25);" href="alle-fotoshoots.html">Bekijk alle thema&rsquo;s</a>
       </div>
     </section>
 
@@ -1682,39 +1666,6 @@
       </div>
     </section>
 
-    <section class="services" id="inspiratie">
-      <div class="section-head">
-        <h2>Populaire fotoshoot thema&rsquo;s.</h2>
-        <p>Bezoekers zoeken vaak op type fotoshoot, locatie, prijs of doel. Deze links helpen ze sneller naar de juiste pagina.</p>
-      </div>
-      <div class="theme-grid" aria-label="Populaire inspiratie Fotoshoot Utrecht">
-        <a class="theme-card" href="portret.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2020/11/portret-foto-laten-maken.jpg" alt="Portretfoto laten maken Utrecht">
-          <div><span class="label">Portret</span><strong>Portretfoto laten maken Utrecht</strong><span>Professionele portretfoto, profielfoto of portfoliofoto in de studio.</span></div>
-        </a>
-        <a class="theme-card" href="zakelijk.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FT0A0078-768x512.jpg" alt="LinkedIn foto en zakelijke fotoshoot Utrecht">
-          <div><span class="label">Zakelijk</span><strong>LinkedIn foto Utrecht</strong><span>Zakelijke profielfoto, headshot, teamfoto en personal branding.</span></div>
-        </a>
-        <a class="theme-card" href="famillie.html">
-          <img src="broer-en-zussen-fotoshoot-buiten.jpg" alt="Familie fotoshoot Utrecht">
-          <div><span class="label">Familie</span><strong>Familie fotoshoot Utrecht</strong><span>Gezinsfoto, familiefoto, kinderen en generaties samen.</span></div>
-        </a>
-        <a class="theme-card" href="baby.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2024/01/Baby-in-basket2.png" alt="Baby fotoshoot Utrecht">
-          <div><span class="label">Baby</span><strong>Baby fotoshoot Utrecht</strong><span>Newborn, baby, peuter, kids en foto&rsquo;s met ouders.</span></div>
-        </a>
-        <a class="theme-card" href="zwangerschap.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/zwanger-fotoshoot.jpg" alt="Zwangerschap fotoshoot Utrecht">
-          <div><span class="label">Zwanger</span><strong>Belly shoot Utrecht</strong><span>Zwangerschap fotoshoot, buikfoto&rsquo;s en foto&rsquo;s met partner.</span></div>
-        </a>
-        <a class="theme-card" href="fotoshoot-inspiratie-utrecht.html">
-          <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/L15A32734-1024x683.jpg" alt="Inspiratie Fotoshoot Utrecht">
-          <div><span class="label">Inspiratie</span><strong>Welke fotoshoot past bij mij?</strong><span>Bekijk alle belangrijke fotoshoot thema&rsquo;s en fotoshoot thema&rsquo;s in Utrecht.</span></div>
-        </a>
-      </div>
-    </section>
-
     <section class="gallery" aria-label="Voorbeelden van fotoshoot stijl">
       <div class="section-head">
         <h2>Foto&rsquo;s uit de studio.</h2>
@@ -1722,9 +1673,9 @@
 
       <div class="gallery-grid">
         <img src="https://fotoshoot.nl/wp-content/uploads/2020/11/fotos-maken-in-Utrecht.jpg" alt="Fotoshoot Utrecht voorbeeld">
-        <img src="https://fotoshoot.nl/wp-content/uploads/2026/05/Grote-familiefoto-blije-man.webp" alt="Familie fotoshoot Utrecht voorbeeld">
-        <img src="https://fotoshoot.nl/wp-content/uploads/2017/12/liefdesshoot-046a.jpg" alt="Love shoot voorbeeld">
-        <img src="https://fotoshoot.nl/wp-content/uploads/2023/06/vader-en-zoon-babyfotograaf.jpg" alt="Baby fotoshoot voorbeeld">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2017/10/FOTOSHOOT.NL_916.jpg" alt="Model fotoshoot in Utrecht voor portfolio en casting">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2019/09/before_after-2.jpg" alt="Glamour fotoshoot before and after voorbeeld">
+        <img src="https://fotoshoot.nl/wp-content/uploads/2024/01/Baby-in-basket2.png" alt="Baby fotoshoot in Utrecht met newborn in studio">
         <img src="https://fotoshoot.nl/wp-content/uploads/2025/04/L15A32734-1024x683.jpg" alt="Professioneel fotoshoot beeldmateriaal">
       </div>
     </section>
@@ -1848,9 +1799,6 @@
     }
   </script>
   <script src="review-strip.js"></script>
+  <script src="site-nav.js"></script>
 </body>
 </html>
-
-
-
-

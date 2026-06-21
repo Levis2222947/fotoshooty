@@ -103,6 +103,7 @@
     }
 </style>
   <link rel="stylesheet" href="review-strip.css">
+  <link rel="stylesheet" href="site-nav.css">
 </head>
 <body>
   <div class="topbar">Creatieve fotoshoot in Utrecht met thema, decor en professionele begeleiding.</div>
@@ -121,6 +122,7 @@
   <footer><p>&copy; 2026 Fotoshoot Utrecht. Creatieve fotoshoots en themashoots.</p></footer>
   <script>const creativeNav=document.querySelector(".nav");const creativeToggle=document.querySelector(".menu-toggle");const creativeLinks=document.querySelectorAll("#creative-menu a");if(creativeNav&&creativeToggle){creativeToggle.addEventListener("click",()=>{const open=creativeNav.classList.toggle("is-open");creativeToggle.setAttribute("aria-expanded",String(open));});creativeLinks.forEach((link)=>link.addEventListener("click",()=>{creativeNav.classList.remove("is-open");creativeToggle.setAttribute("aria-expanded","false");}));}</script>
   <script src="review-strip.js"></script>
+  <script src="site-nav.js"></script>
 </body>
 </html>
 
