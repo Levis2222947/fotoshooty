@@ -11,7 +11,7 @@
   color: #344648;
   display: flex;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 1.35rem;
   justify-content: space-between;
   padding: 0.78rem 5vw;
   position: sticky;
@@ -102,7 +102,7 @@
   flex: 1 1 auto;
   font-size: 0.88rem;
   font-weight: 850;
-  gap: 0.9rem;
+  gap: 1.25rem;
   justify-content: flex-end;
   min-width: 0;
   white-space: nowrap;
@@ -155,6 +155,7 @@
   top: 100%;
   transform: translateY(-6px);
   transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 90;
 }
 
 .fs-dropdown::after {
