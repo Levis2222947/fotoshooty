@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   if (document.querySelector(".reviews") || document.querySelector(".fs-review-strip")) return;
 
   const hero = document.querySelector(".hero");
@@ -24,11 +24,5 @@
   section.innerHTML = '<div class="fs-review-window"><div class="fs-review-track"><div class="fs-review-set">' + cards + '</div><div class="fs-review-set" aria-hidden="true">' + cards + '</div></div></div>';
   hero.insertAdjacentElement("afterend", section);
 
-  if (!document.querySelector(".fs-info-links")) {
-    const info = document.createElement("section");
-    info.className = "fs-info-links";
-    info.innerHTML = '<div class="fs-info-links-inner"><h2>Praktische informatie.</h2><p>Handige pagina&rsquo;s voor bezoekers die willen weten hoe een fotoshoot werkt, wat ze aantrekken en waar de studio zit.</p><div class="fs-info-grid"><a class="fs-info-card" href="alle-fotoshoots.html">Alle fotoshoots<span>Bekijk alle thema&rsquo;s in Utrecht.</span></a><a class="fs-info-card" href="werkwijze.html">Werkwijze<span>Van boeken tot foto&rsquo;s kiezen.</span></a><a class="fs-info-card" href="kledingadvies.html">Kledingadvies<span>Tips per soort fotoshoot.</span></a><a class="fs-info-card" href="veelgestelde-vragen.html">FAQ<span>Antwoorden op veelgestelde vragen.</span></a><a class="fs-info-card" href="locatie-utrecht.html">Locatie<span>Adres, route en studio-informatie.</span></a><a class="fs-info-card" href="fotoshoot-inspiratie-utrecht.html">Inspiratie<span>Welke fotoshoot past bij jou?</span></a></div></div>';
-    section.insertAdjacentElement("afterend", info);
-  }
 })();
 

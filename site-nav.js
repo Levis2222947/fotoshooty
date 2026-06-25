@@ -47,8 +47,8 @@
         <a href="cadeaubon.html" class="${isActive("cadeaubon.html") ? "is-active" : ""}">Cadeaubon</a>
         <a href="${priceHref}">Prijzen</a>
         <a href="contact.html" class="${isActive("contact.html") ? "is-active" : ""}">Contact</a>
-        <a href="veelgestelde-vragen.html" class="${isActive("veelgestelde-vragen.html") ? "is-active" : ""}">Veel gestelde vragen</a>
-        <a class="fs-book-button" href="https://fotoshoot.nl/boeken/">Boek</a>
+        <a href="veelgestelde-vragen.html" class="${isActive("veelgestelde-vragen.html") ? "is-active" : ""}">Veelgestelde vragen</a>
+        <a class="fs-book-button" href="https://fotoshoot.nl/boeken/">Boek nu!</a>
       </div>
     `;
 

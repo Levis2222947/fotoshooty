@@ -52,7 +52,7 @@ section { padding: clamp(3rem,6vw,6rem) 5vw; }
 .faq-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2,minmax(0,1fr)); margin: 0 auto; max-width: 1180px; }
 .cta { background: linear-gradient(90deg, rgba(52,70,72,.94), rgba(125,142,149,.62)), url("https://fotoshoot.nl/wp-content/uploads/2020/11/fotos-maken-in-Utrecht.jpg") center/cover no-repeat; color: var(--white); text-align: center; }
 .cta p { color: rgba(255,255,255,.78); margin: .9rem auto 1.5rem; max-width: 660px; }
-.fs-review-strip { background: var(--white); overflow: hidden; padding: 1.35rem 0 .2rem; }
+.fs-review-strip { background: var(--white); overflow: hidden; padding: 1.35rem 0 1.5rem; }
 .fs-review-window { overflow: hidden; position: relative; }
 .fs-review-track { animation: fsSlideReviews 70s linear infinite; display: flex; gap: 1rem; padding: 0 1rem; width: max-content; }
 .fs-review-track:hover { animation-play-state: paused; }
