@@ -10,7 +10,7 @@
     ["review-4.png", "Jobin Gholami", "Geweldige service. Ze waren erg aardig voor mijn kinderen en de sfeer was relaxed."],
     ["review-5.png", "Amira Elsen", "Fantastische fotograaf. We voelden ons meteen op ons gemak en de foto's zijn prachtig."],
     ["review-7.png", "Alex Rowan", "Amazing experience. Super professional and made me feel at ease immediately."],
-    ["review-12.png", "Cathelijne Vreugdenhil", "Hele leuke fotoshoot, goede fotograaf met leuke fotoideeen en mooie kwaliteit."]
+    ["review-12.png", "Cathelijne Vreugdenhil", "Hele leuke fotoshoot, goede fotograaf met leuke foto-idee&euml;n en mooie kwaliteit."]
   ];
 
   function card(review) {
